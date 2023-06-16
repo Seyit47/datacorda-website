@@ -9,25 +9,13 @@
 }
 
 html {
-    font-family: "Averta", Arial, sans-serif;
+    font-family: "Manrope", Arial, sans-serif;
     color: $cl-text;
     font-size: 16px !important;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-
-    @media screen and (min-width: $screen-lg--1) {
-        font-size: 13px !important;
-    }
-
-    @media screen and (min-width: $screen-2xl) {
-        font-size: 16px !important;
-    }
-
-    @media screen and (min-width: $screen-5xl) {
-        font-size: 18px !important;
-    }
 }
 
 *,
