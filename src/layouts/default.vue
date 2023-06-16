@@ -1,7 +1,12 @@
+<script lang="ts" setup>
+import AppHeader from "@/components/core/app/AppHeader.vue";
+</script>
+
 <template>
     <div class="relative min-h-screen w-full">
-        <div class="w-full">
+        <AppHeader />
+        <main class="w-full">
             <slot />
-        </div>
+        </main>
     </div>
 </template>
