@@ -8,29 +8,23 @@ export default defineNuxtConfig({
         port: Number(process.env.PORT) || 3000,
     },
 
-    vite: {
-        server: {
-            proxy: {
-                "/api": {
-                    target: process.env.BACKEND_SERVER_ORIGIN || "http://127.0.0.1:8080",
-                    changeOrigin: true,
-                },
-                "/static": {
-                    target: process.env.STATIC_SERVER_ORIGIN || "http://127.0.0.1:8080",
-                    changeOrigin: true,
-                },
-            },
-        },
-    },
-
     typescript: {
+        shim: false,
         strict: true,
         typeCheck: true,
     },
 
     css: ["@/assets/scss/style.scss"],
 
-    modules: ["@nuxtjs/tailwindcss", "@vueuse/nuxt"],
+    modules: ["@nuxtjs/tailwindcss", "@vueuse/nuxt", "@nuxt/image", "@nuxtjs/device"],
+
+    image: {
+        dir: "assets/img",
+    },
+
+    device: {
+        refreshOnResize: true,
+    },
 
     app: {
         pageTransition: { name: "page", mode: "out-in" },

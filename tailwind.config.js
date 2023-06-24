@@ -70,7 +70,11 @@ module.exports = {
             pink: colors.pink,
             rose: colors.rose,
 
-            "cl-main": "#575cdd",
+            "cl-main": "#6D5CDB",
+            "cl-secondary": "#575cdd",
+            "cl-tertiary": "#436edb",
+
+            "cl-text": "#02274a",
         }),
         columns: {
             auto: "auto",
