@@ -3,198 +3,202 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
 </script>
 
 <template>
-    <BaseMaxContent class="px-6">
-        <section id="solutions" ref="wrapperEl" class="flex flex-col gap-y-20 py-6">
-            <div class="grid grid-cols-12 items-center">
-                <div data-aos="fade-up-right" class="col-span-7">
-                    <div class="relative pt-[90.71%]">
-                        <img
-                            src="@/assets/img/why-us.svg"
-                            alt=""
-                            class="main-banner-right-animation absolute top-0 -left-[20%] w-full h-full"
-                        />
-                    </div>
-                </div>
-
-                <div data-aos="fade-up-left" class="col-span-5">
-                    <div class="flex flex-col gap-y-2.5">
-                        <div>
-                            <span
-                                class="py-2.5 px-4 rounded-full bg-cl-main/10 text-cl-main text-size_12/16 tracking-widest uppercase"
-                            >
-                                over 150k+ client
-                            </span>
-                        </div>
-
-                        <h2 class="text-[3.5rem] font-semibold">
-                            Target
-                            <span class="text-cl-main underline">Audience</span> for your business.
-                        </h2>
-
-                        <p class="text-size_18/16 leading-[1.8]">
-                            AI technology is perfect for best business solutions & we offer help to
-                            achieve your goals.
-                        </p>
-
-                        <ul class="mt-6 flex flex-col gap-y-3.75">
-                            <li class="font-medium">Various analysis options.</li>
-                            <li class="font-medium">Page Load (time, size, number of requests).</li>
-                            <li class="font-medium">Advance Data analysis operation.</li>
-                        </ul>
-
-                        <div class="w-55 mt-14">
-                            <button
-                                class="flex items-center justify-center w-full h-full py-4 border-2 border-cl-main text-white hover:text-cl-text bg-cl-main hover:bg-white rounded-full font-bold transition-colors duration-150"
-                            >
-                                More details
-                            </button>
+    <div>
+        <BaseMaxContent class="px-6">
+            <section id="solutions" ref="wrapperEl" class="flex flex-col gap-y-20 py-6">
+                <div class="grid grid-cols-12 items-center">
+                    <div data-aos="fade-up-right" class="col-span-7">
+                        <div class="relative pt-[90.71%]">
+                            <img
+                                src="@/assets/img/why-us.svg"
+                                alt=""
+                                class="main-banner-right-animation absolute top-0 -left-[20%] w-full h-full"
+                            />
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="grid grid-cols-12 items-center">
-                <div data-aos="fade-up-right" class="col-span-5">
-                    <div class="flex flex-col gap-y-2.5">
-                        <div>
-                            <span
-                                class="py-2.5 px-4 rounded-full bg-cl-main/10 text-cl-main text-size_12/16 tracking-widest uppercase"
-                            >
-                                over 150k+ client
-                            </span>
-                        </div>
 
-                        <h2 class="text-[3.5rem] font-semibold">
-                            Target
-                            <span class="text-cl-main underline">Audience</span> for your business.
-                        </h2>
+                    <div data-aos="fade-up-left" class="col-span-5">
+                        <div class="flex flex-col gap-y-2.5">
+                            <div>
+                                <span
+                                    class="py-2.5 px-4 rounded-full bg-cl-main/10 text-cl-main text-size_12/16 tracking-widest uppercase"
+                                >
+                                    over 150k+ client
+                                </span>
+                            </div>
 
-                        <p class="text-size_18/16 leading-[1.8]">
-                            AI technology is perfect for best business solutions & we offer help to
-                            achieve your goals.
-                        </p>
+                            <h2 class="text-[3.5rem] font-semibold">Deep Analytics</h2>
 
-                        <ul class="mt-6 flex flex-col gap-y-3.75">
-                            <li class="font-medium">Various analysis options.</li>
-                            <li class="font-medium">Page Load (time, size, number of requests).</li>
-                            <li class="font-medium">Advance Data analysis operation.</li>
-                        </ul>
+                            <p class="text-size_18/16 leading-[1.8]">
+                                Our cutting-edge platform offers powerful analytics and insights
+                                into your game's performance.
+                            </p>
 
-                        <div class="w-55 mt-14">
-                            <button
-                                class="flex items-center justify-center w-full h-full py-4 border-2 border-cl-main text-white hover:text-cl-text bg-cl-main hover:bg-white rounded-full font-bold transition-colors duration-150"
-                            >
-                                More details
-                            </button>
+                            <p class="text-size_18/16 leading-[1.8]">
+                                With our intuitive dashboard, you can easily track key metrics such
+                                as Daily Active Users (DAU), Monthly Active Users (MAU), retention
+                                rate, and churn rate.
+                            </p>
+
+                            <p class="text-size_18/16 leading-[1.8]">
+                                These comprehensive graphics provide a clear picture of your game's
+                                performance and allow you to make data-driven decisions to optimize
+                                player engagement.
+                            </p>
+
+                            <div class="w-55 mt-14">
+                                <button
+                                    class="flex items-center justify-center w-full h-full py-4 border-2 border-cl-main text-white hover:text-cl-text bg-cl-main hover:bg-white rounded-full font-bold transition-colors duration-150"
+                                >
+                                    More details
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="grid grid-cols-12 items-center">
+                    <div data-aos="fade-up-right" class="col-span-5">
+                        <div class="flex flex-col gap-y-2.5">
+                            <div>
+                                <span
+                                    class="py-2.5 px-4 rounded-full bg-cl-main/10 text-cl-main text-size_12/16 tracking-widest uppercase"
+                                >
+                                    over 150k+ client
+                                </span>
+                            </div>
 
-                <div data-aos="fade-up-left" class="col-span-7">
-                    <div class="relative pt-[90.71%]">
-                        <img
-                            src="@/assets/img/why-us.svg"
-                            alt=""
-                            class="main-banner-right-animation absolute top-0 -right-[20%] w-full h-full"
-                        />
-                    </div>
-                </div>
-            </div>
-            <div class="grid grid-cols-12 items-center">
-                <div data-aos="fade-up-right" class="col-span-7">
-                    <div class="relative pt-[90.71%]">
-                        <img
-                            src="@/assets/img/why-us.svg"
-                            alt=""
-                            class="main-banner-right-animation absolute top-0 -left-[20%] w-full h-full"
-                        />
-                    </div>
-                </div>
+                            <h2 class="text-[3.5rem] font-semibold">Take user-based actions</h2>
 
-                <div data-aos="fade-up-left" class="col-span-5">
-                    <div class="flex flex-col gap-y-2.5">
-                        <div>
-                            <span
-                                class="py-2.5 px-4 rounded-full bg-cl-main/10 text-cl-main text-size_12/16 tracking-widest uppercase"
-                            >
-                                over 150k+ client
-                            </span>
+                            <p class="text-size_18/16 leading-[1.8]">
+                                Our advanced AI technology goes beyond just analyzing your game's
+                                data.
+                            </p>
+                            <p class="text-size_18/16 leading-[1.8]">
+                                It intelligently segments your players based on various factors such
+                                as behavior, preferences, and engagement patterns.
+                            </p>
+                            <p class="text-size_18/16 leading-[1.8]">
+                                By understanding your players on a deeper level, we empower you to
+                                tailor your actions and interventions for each segment, ensuring
+                                personalized experiences that drive player satisfaction and loyalty.
+                            </p>
+
+                            <div class="w-55 mt-14">
+                                <button
+                                    class="flex items-center justify-center w-full h-full py-4 border-2 border-cl-main text-white hover:text-cl-text bg-cl-main hover:bg-white rounded-full font-bold transition-colors duration-150"
+                                >
+                                    More details
+                                </button>
+                            </div>
                         </div>
+                    </div>
 
-                        <h2 class="text-[3.5rem] font-semibold">
-                            Target
-                            <span class="text-cl-main underline">Audience</span> for your business.
-                        </h2>
-
-                        <p class="text-size_18/16 leading-[1.8]">
-                            AI technology is perfect for best business solutions & we offer help to
-                            achieve your goals.
-                        </p>
-
-                        <ul class="mt-6 flex flex-col gap-y-3.75">
-                            <li class="font-medium">Various analysis options.</li>
-                            <li class="font-medium">Page Load (time, size, number of requests).</li>
-                            <li class="font-medium">Advance Data analysis operation.</li>
-                        </ul>
-
-                        <div class="w-55 mt-14">
-                            <button
-                                class="flex items-center justify-center w-full h-full py-4 border-2 border-cl-main text-white hover:text-cl-text bg-cl-main hover:bg-white rounded-full font-bold transition-colors duration-150"
-                            >
-                                More details
-                            </button>
+                    <div data-aos="fade-up-left" class="col-span-7">
+                        <div class="relative pt-[90.71%]">
+                            <img
+                                src="@/assets/img/why-us.svg"
+                                alt=""
+                                class="main-banner-right-animation absolute top-0 -right-[20%] w-full h-full"
+                            />
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="grid grid-cols-12 items-center">
-                <div data-aos="fade-up-right" class="col-span-5">
-                    <div class="flex flex-col gap-y-2.5">
-                        <div>
-                            <span
-                                class="py-2.5 px-4 rounded-full bg-cl-main/10 text-cl-main text-size_12/16 tracking-widest uppercase"
-                            >
-                                over 150k+ client
-                            </span>
+                <div class="grid grid-cols-12 items-center">
+                    <div data-aos="fade-up-right" class="col-span-7">
+                        <div class="relative pt-[90.71%]">
+                            <img
+                                src="@/assets/img/why-us.svg"
+                                alt=""
+                                class="main-banner-right-animation absolute top-0 -left-[20%] w-full h-full"
+                            />
                         </div>
+                    </div>
 
-                        <h2 class="text-[3.5rem] font-semibold">
-                            Target
-                            <span class="text-cl-main underline">Audience</span> for your business.
-                        </h2>
+                    <div data-aos="fade-up-left" class="col-span-5">
+                        <div class="flex flex-col gap-y-2.5">
+                            <div>
+                                <span
+                                    class="py-2.5 px-4 rounded-full bg-cl-main/10 text-cl-main text-size_12/16 tracking-widest uppercase"
+                                >
+                                    over 150k+ client
+                                </span>
+                            </div>
 
-                        <p class="text-size_18/16 leading-[1.8]">
-                            AI technology is perfect for best business solutions & we offer help to
-                            achieve your goals.
-                        </p>
+                            <h2 class="text-[3.5rem] font-semibold">Increase retention rate</h2>
 
-                        <ul class="mt-6 flex flex-col gap-y-3.75">
-                            <li class="font-medium">Various analysis options.</li>
-                            <li class="font-medium">Page Load (time, size, number of requests).</li>
-                            <li class="font-medium">Advance Data analysis operation.</li>
-                        </ul>
+                            <p class="text-size_18/16 leading-[1.8]">
+                                What sets us apart is our ability to predict the future.
+                            </p>
 
-                        <div class="w-55 mt-14">
-                            <button
-                                class="flex items-center justify-center w-full h-full py-4 border-2 border-cl-main text-white hover:text-cl-text bg-cl-main hover:bg-white rounded-full font-bold transition-colors duration-150"
-                            >
-                                More details
-                            </button>
+                            <p class="text-size_18/16 leading-[1.8]">
+                                Our AI models are trained to forecast player behavior, allowing you
+                                to anticipate trends and take proactive measures to maximize player
+                                engagement and reduce churn.
+                            </p>
+
+                            <p class="text-size_18/16 leading-[1.8]">
+                                By staying one step ahead, you can retain your players and create a
+                                thriving gaming experience.
+                            </p>
+
+                            <div class="w-55 mt-14">
+                                <button
+                                    class="flex items-center justify-center w-full h-full py-4 border-2 border-cl-main text-white hover:text-cl-text bg-cl-main hover:bg-white rounded-full font-bold transition-colors duration-150"
+                                >
+                                    More details
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="grid grid-cols-12 items-center">
+                    <div data-aos="fade-up-right" class="col-span-5">
+                        <div class="flex flex-col gap-y-2.5">
+                            <div>
+                                <span
+                                    class="py-2.5 px-4 rounded-full bg-cl-main/10 text-cl-main text-size_12/16 tracking-widest uppercase"
+                                >
+                                    over 150k+ client
+                                </span>
+                            </div>
 
-                <div data-aos="fade-up-left" class="col-span-7">
-                    <div class="relative pt-[90.71%]">
-                        <img
-                            src="@/assets/img/why-us.svg"
-                            alt=""
-                            class="main-banner-right-animation absolute top-0 -right-[20%] w-full h-full"
-                        />
+                            <h2 class="text-[3.5rem] font-semibold">Increase revenue</h2>
+
+                            <p class="text-size_18/16 leading-[1.8]">
+                                By providing informed monetization strategies, identifying upsell
+                                and cross-sell opportunities, optimizing pricing strategies,
+                                delivering personalized in-game advertising, and offering predictive
+                                revenue modeling.
+                            </p>
+
+                            <p class="text-size_18/16 leading-[1.8]">
+                                With Datacorda, you can maximize your revenue potential and drive
+                                sustainable growth for your mobile gaming business.
+                            </p>
+
+                            <div class="w-55 mt-14">
+                                <button
+                                    class="flex items-center justify-center w-full h-full py-4 border-2 border-cl-main text-white hover:text-cl-text bg-cl-main hover:bg-white rounded-full font-bold transition-colors duration-150"
+                                >
+                                    More details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-up-left" class="col-span-7">
+                        <div class="relative pt-[90.71%]">
+                            <img
+                                src="@/assets/img/why-us.svg"
+                                alt=""
+                                class="main-banner-right-animation absolute top-0 -right-[20%] w-full h-full"
+                            />
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </BaseMaxContent>
+            </section>
+        </BaseMaxContent>
+    </div>
 </template>
 
 <style lang="scss" scoped>

@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-    <header class="w-full h-full">
+    <header class="w-full h-full bg-cl-main/80">
         <div class="px-12 py-4">
             <div class="w-full h-12.5 flex items-center">
                 <NuxtLink
@@ -25,7 +25,7 @@
                             hash: '#home',
                         }"
                         title="Home"
-                        class="hover:text-cl-main transition-colors duration-150"
+                        class="hover:text-cl-tertiary text-white transition-colors duration-150"
                     >
                         Home
                     </NuxtLink>
@@ -34,8 +34,8 @@
                             name: 'index',
                             hash: '#solutions',
                         }"
-                        title="Services"
-                        class="hover:text-cl-main transition-colors duration-150"
+                        title="Solutions"
+                        class="hover:text-cl-main text-white transition-colors duration-150"
                     >
                         Solutions
                     </NuxtLink>
@@ -45,7 +45,7 @@
                             hash: '#about',
                         }"
                         title="About"
-                        class="hover:text-cl-main transition-colors duration-150"
+                        class="hover:text-cl-main text-white transition-colors duration-150"
                     >
                         About
                     </NuxtLink>
@@ -55,7 +55,7 @@
                             hash: '#contact',
                         }"
                         title="Contact"
-                        class="hover:text-cl-main transition-colors duration-150"
+                        class="hover:text-cl-main text-white transition-colors duration-150"
                     >
                         Contact
                     </NuxtLink>
@@ -64,7 +64,7 @@
                     <NuxtLink
                         to="#"
                         :external="true"
-                        class="hover:text-cl-main transition-colors duration-150"
+                        class="hover:text-cl-main text-white font-semibold transition-colors duration-150"
                     >
                         Login
                     </NuxtLink>
@@ -73,7 +73,7 @@
                         <NuxtLink
                             to="#"
                             :external="true"
-                            class="flex items-center justify-center w-full h-full py-4 border-2 border-cl-main text-white hover:text-cl-text bg-cl-main hover:bg-white rounded-full font-bold transition-colors duration-150"
+                            class="flex items-center justify-center w-full h-full py-4 border-2 hover:border-white border-transparent text-cl-main hover:text-white bg-white hover:bg-transparent rounded-full font-bold transition-colors duration-150"
                         >
                             Sign up
                         </NuxtLink>

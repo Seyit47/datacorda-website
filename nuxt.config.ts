@@ -38,4 +38,8 @@ export default defineNuxtConfig({
     vueuse: {
         ssrHandlers: true,
     },
+
+    build: {
+        transpile: ["vue-toastification"],
+    },
 });
