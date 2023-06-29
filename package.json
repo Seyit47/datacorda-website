@@ -26,6 +26,7 @@
     "@nuxtjs/eslint-module": "^4.1.0",
     "@nuxtjs/tailwindcss": "^6.6.7",
     "@types/aos": "^3.0.4",
+    "@types/d3": "^7.4.0",
     "@vueuse/core": "^9.11.1",
     "@vueuse/nuxt": "^9.11.1",
     "eslint": "^8.32.0",

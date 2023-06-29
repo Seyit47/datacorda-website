@@ -8,9 +8,9 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
             <section id="solutions" ref="wrapperEl" class="flex flex-col gap-y-20 py-6">
                 <div class="grid grid-cols-12 items-center">
                     <div data-aos="fade-up-right" class="col-span-7">
-                        <div class="relative pt-[90.71%]">
-                            <img
-                                src="@/assets/img/why-us.svg"
+                        <div class="relative pt-[72.48%]">
+                            <NuxtImg
+                                src="/solutions-1.png"
                                 alt=""
                                 class="main-banner-right-animation absolute top-0 -left-[20%] w-full h-full"
                             />
@@ -94,10 +94,11 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                     </div>
 
                     <div data-aos="fade-up-left" class="col-span-7">
-                        <div class="relative pt-[90.71%]">
-                            <img
-                                src="@/assets/img/why-us.svg"
+                        <div class="relative pt-[86.76%]">
+                            <NuxtImg
+                                src="/solutions-2.png"
                                 alt=""
+                                format="webp"
                                 class="main-banner-right-animation absolute top-0 -right-[20%] w-full h-full"
                             />
                         </div>
@@ -106,9 +107,10 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                 <div class="grid grid-cols-12 items-center">
                     <div data-aos="fade-up-right" class="col-span-7">
                         <div class="relative pt-[90.71%]">
-                            <img
-                                src="@/assets/img/why-us.svg"
+                            <NuxtImg
+                                src="/solutions-3.png"
                                 alt=""
+                                format="webp"
                                 class="main-banner-right-animation absolute top-0 -left-[20%] w-full h-full"
                             />
                         </div>
@@ -188,9 +190,10 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
 
                     <div data-aos="fade-up-left" class="col-span-7">
                         <div class="relative pt-[90.71%]">
-                            <img
-                                src="@/assets/img/why-us.svg"
+                            <NuxtImg
+                                src="/solutions-3.png"
                                 alt=""
+                                format="webp"
                                 class="main-banner-right-animation absolute top-0 -right-[20%] w-full h-full"
                             />
                         </div>

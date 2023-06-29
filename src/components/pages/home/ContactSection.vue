@@ -110,8 +110,16 @@ defineExpose({
                         </div>
                     </form>
                 </div>
-                <div class="col-span-7 w-[90%] ml-auto">
-                    <NuxtImg src="/contact.png" format="webp" />
+                <div class="col-span-7">
+                    <div class="w-full ml-auto">
+                        <div class="relative pt-[84.18%]">
+                            <NuxtImg
+                                src="/contact.png"
+                                format="webp"
+                                class="absolute top-0 -right-[10%] w-full h-full"
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </BaseMaxContent>
