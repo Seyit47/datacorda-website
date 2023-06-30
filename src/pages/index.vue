@@ -24,6 +24,7 @@ import ContactSection from "@/components/pages/home/ContactSection.vue";
                         <div
                             class="col-span-6 bg-white"
                             style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px"
+                            data-aos="fade-up"
                         >
                             <div class="flex flex-col gap-y-7.5 px-10 py-12">
                                 <h2 class="text-5xl font-bold">About us</h2>
@@ -60,7 +61,7 @@ import ContactSection from "@/components/pages/home/ContactSection.vue";
         </section>
         <BaseMaxContent class="px-6 py-6 flex items-center justify-center">
             <div class="flex items-center justify-center w-[80%] p-12 min-h-[20vh]">
-                <h2 class="text-[2.5rem] text-center font-bold">
+                <h2 class="text-[2.5rem] text-center font-bold" data-aos="fade-up">
                     With subscribing our platform, businesses from mobile gaming industry can:
                 </h2>
             </div>
@@ -71,6 +72,7 @@ import ContactSection from "@/components/pages/home/ContactSection.vue";
         <BaseMaxContent class="px-6 py-12 mt-12 flex items-center justify-center">
             <div
                 class="flex flex-col gap-y-7.5 items-center justify-center w-[80%] p-12 min-h-[20vh] bg-white"
+                data-aos="fade-up"
             >
                 <p class="text-[1.5rem] text-center font-bold">
                     With Datacorda, you'll have the tools and insights you need to make informed

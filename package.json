@@ -49,6 +49,7 @@
     ]
   },
   "dependencies": {
+    "@heroicons/vue": "^2.0.18",
     "aos": "^2.3.4",
     "connect-redis": "^7.1.0",
     "express-session": "^1.17.3",

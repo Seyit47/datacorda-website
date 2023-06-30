@@ -7,7 +7,7 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
         <BaseMaxContent class="px-6">
             <section id="solutions" ref="wrapperEl" class="flex flex-col gap-y-20 py-6">
                 <div class="grid grid-cols-12 items-center">
-                    <div data-aos="fade-up-right" class="col-span-7">
+                    <div data-aos="fade-up" class="col-span-7">
                         <div class="relative pt-[72.48%]">
                             <NuxtImg
                                 src="/solutions-1.png"
@@ -17,7 +17,7 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                         </div>
                     </div>
 
-                    <div data-aos="fade-up-left" class="col-span-5">
+                    <div data-aos="fade-up" class="col-span-5">
                         <div class="flex flex-col gap-y-2.5">
                             <div>
                                 <span
@@ -57,7 +57,7 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                     </div>
                 </div>
                 <div class="grid grid-cols-12 items-center">
-                    <div data-aos="fade-up-right" class="col-span-5">
+                    <div data-aos="fade-up" class="col-span-5">
                         <div class="flex flex-col gap-y-2.5">
                             <div>
                                 <span
@@ -93,7 +93,7 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                         </div>
                     </div>
 
-                    <div data-aos="fade-up-left" class="col-span-7">
+                    <div data-aos="fade-up" class="col-span-7">
                         <div class="relative pt-[86.76%]">
                             <NuxtImg
                                 src="/solutions-2.png"
@@ -105,8 +105,8 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                     </div>
                 </div>
                 <div class="grid grid-cols-12 items-center">
-                    <div data-aos="fade-up-right" class="col-span-7">
-                        <div class="relative pt-[90.71%]">
+                    <div data-aos="fade-up" class="col-span-7">
+                        <div class="relative pt-[75.81%]">
                             <NuxtImg
                                 src="/solutions-3.png"
                                 alt=""
@@ -116,7 +116,7 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                         </div>
                     </div>
 
-                    <div data-aos="fade-up-left" class="col-span-5">
+                    <div data-aos="fade-up" class="col-span-5">
                         <div class="flex flex-col gap-y-2.5">
                             <div>
                                 <span
@@ -154,7 +154,7 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                     </div>
                 </div>
                 <div class="grid grid-cols-12 items-center">
-                    <div data-aos="fade-up-right" class="col-span-5">
+                    <div data-aos="fade-up" class="col-span-5">
                         <div class="flex flex-col gap-y-2.5">
                             <div>
                                 <span
@@ -188,10 +188,10 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                         </div>
                     </div>
 
-                    <div data-aos="fade-up-left" class="col-span-7">
+                    <div data-aos="fade-up" class="col-span-7">
                         <div class="relative pt-[90.71%]">
                             <NuxtImg
-                                src="/solutions-3.png"
+                                src="/solutions-4.png"
                                 alt=""
                                 format="webp"
                                 class="main-banner-right-animation absolute top-0 -right-[20%] w-full h-full"

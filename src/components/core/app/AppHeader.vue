@@ -25,20 +25,11 @@
                             hash: '#home',
                         }"
                         title="Home"
-                        class="hover:text-cl-tertiary text-white transition-colors duration-150"
+                        class="hover:text-cl-main text-white transition-colors duration-150"
                     >
                         Home
                     </NuxtLink>
-                    <NuxtLink
-                        :to="{
-                            name: 'index',
-                            hash: '#solutions',
-                        }"
-                        title="Solutions"
-                        class="hover:text-cl-main text-white transition-colors duration-150"
-                    >
-                        Solutions
-                    </NuxtLink>
+
                     <NuxtLink
                         :to="{
                             name: 'index',
@@ -49,6 +40,18 @@
                     >
                         About
                     </NuxtLink>
+
+                    <NuxtLink
+                        :to="{
+                            name: 'index',
+                            hash: '#solutions',
+                        }"
+                        title="Solutions"
+                        class="hover:text-cl-main text-white transition-colors duration-150"
+                    >
+                        Solutions
+                    </NuxtLink>
+
                     <NuxtLink
                         :to="{
                             name: 'index',
@@ -62,8 +65,9 @@
                 </nav>
                 <div class="flex items-center">
                     <NuxtLink
-                        to="#"
-                        :external="true"
+                        :to="{
+                            name: 'sign-in',
+                        }"
                         class="hover:text-cl-main text-white font-semibold transition-colors duration-150"
                     >
                         Login
@@ -71,8 +75,9 @@
 
                     <div class="w-36 ml-12">
                         <NuxtLink
-                            to="#"
-                            :external="true"
+                            :to="{
+                                name: 'sign-up',
+                            }"
                             class="flex items-center justify-center w-full h-full py-4 border-2 hover:border-white border-transparent text-cl-main hover:text-white bg-white hover:bg-transparent rounded-full font-bold transition-colors duration-150"
                         >
                             Sign up

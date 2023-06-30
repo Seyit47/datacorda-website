@@ -59,7 +59,7 @@ defineExpose({
     <section id="contact" class="min-h-screen flex items-center">
         <BaseMaxContent class="px-6">
             <div class="grid grid-cols-12 items-center">
-                <div class="col-span-5 flex flex-col gap-y-7.5">
+                <div class="col-span-5 flex flex-col gap-y-7.5" data-aos="fade-right">
                     <div class="flex flex-col gap-y-5">
                         <h2 class="text-[3.5rem] font-bold">Contact us</h2>
                         <p class="text-size_18/16">
@@ -110,7 +110,7 @@ defineExpose({
                         </div>
                     </form>
                 </div>
-                <div class="col-span-7">
+                <div class="col-span-7" data-aos="fade-left">
                     <div class="w-full ml-auto">
                         <div class="relative pt-[84.18%]">
                             <NuxtImg

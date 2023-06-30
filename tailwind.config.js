@@ -73,6 +73,9 @@ module.exports = {
             "cl-main": "#35275E",
             "cl-secondary": "#575cdd",
             "cl-tertiary": "#436edb",
+            "cl-default": "#EFF1F9",
+            "cl-gray": "#8B8D97",
+            "cl-blue": "#5570F1",
 
             "cl-text": "#02274a",
         }),
