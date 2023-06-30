@@ -63,7 +63,7 @@ defineExpose({
                     <div class="flex flex-col gap-y-5">
                         <h2 class="text-[3.5rem] font-bold">Contact us</h2>
                         <p class="text-size_18/16">
-                            Contact us now and see what your mobile gaming business is capable of.
+                            Contact us now and see what your game is capable of.
                         </p>
                     </div>
                     <form class="flex flex-col gap-y-5" @submit.prevent="onSubmit">

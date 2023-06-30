@@ -17,12 +17,7 @@ const toast = useToast();
 
 const form = useForm({
     validationSchema: object({
-        email: string()
-            .required("Required field!")
-            .matches(
-                /^[_A-Za-z0-9-+]+(\\.[_A-Za-z0-9-]+)*@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/,
-                "Entered invalid email!"
-            ),
+        email: string().required("Required field!").email("Entered invalid email!"),
         password: string()
             .required("Required field!")
             .min(8, "Password must be at least 8 characters long!")

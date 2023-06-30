@@ -23,12 +23,7 @@ const form = useForm({
         fullname: string()
             .required("Required field!")
             .min(8, "Username length must be at least 8 characters!"),
-        email: string()
-            .required("Required field!")
-            .matches(
-                /^[_A-Za-z0-9-+]+(\\.[_A-Za-z0-9-]+)*@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/,
-                "Entered invalid email!"
-            ),
+        email: string().required("Required field!").email("Entered invalid email!"),
         password: string()
             .required("Required field!")
             .min(8, "Password length must be at least 8 characters!")
@@ -145,7 +140,7 @@ async function onSubmit() {
                     <span class="text-size_14/16 text-cl-gray">Already have an account? </span>
                     <NuxtLink
                         :to="{
-                            name: 'sign-up',
+                            name: 'sign-in',
                         }"
                         class="text-cl-blue text-size_14/16"
                         >Login</NuxtLink

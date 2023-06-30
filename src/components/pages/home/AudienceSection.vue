@@ -27,7 +27,7 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                                 </span>
                             </div>
 
-                            <h2 class="text-[3.5rem] font-semibold">Deep Analytics</h2>
+                            <h2 class="text-[3.5rem] font-semibold">See Deep Analytics</h2>
 
                             <p class="text-size_18/16 leading-[1.8]">
                                 Our cutting-edge platform offers powerful analytics and insights
