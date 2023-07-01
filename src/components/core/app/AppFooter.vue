@@ -42,7 +42,9 @@ defineOptions({
                                 <h4 class="font-bold leading-none">Contacts</h4>
                                 <span class="text-size_14/16">+993 65 55 32 12</span>
                                 <span class="text-size_14/16">+993 12 34 56 76</span>
-                                <span class="text-size_14/16">info@datacorda.com</span>
+                                <a href="mailto:info@datacorda.com" class="text-size_14/16"
+                                    >info@datacorda.com</a
+                                >
                             </div>
                             <div class="flex flex-col gap-y-2.5">
                                 <h4 class="font-bold leading-none">Links</h4>

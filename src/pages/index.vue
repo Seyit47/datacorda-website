@@ -10,10 +10,10 @@ import ContactSection from "@/components/pages/home/ContactSection.vue";
         <MainSection />
         <section id="about">
             <BaseMaxContent class="relative px-6 py-6">
-                <div class="absolute top-1/2 -translate-y-1/2 left-[10%] w-[80%]">
-                    <div class="relative pt-[66.7%]">
+                <div class="absolute top-1/2 -translate-y-1/2 left-[10%] w-full">
+                    <div class="relative pt-[70%]">
                         <NuxtImg
-                            src="/about-us.jpeg"
+                            src="/about-us.png"
                             alt="about us"
                             class="absolute top-1/2 -translate-y-1/2 left-0 w-full h-full"
                         />
@@ -22,7 +22,7 @@ import ContactSection from "@/components/pages/home/ContactSection.vue";
                 <div class="relative min-h-screen flex items-center">
                     <div class="grid grid-cols-12 items-center">
                         <div
-                            class="col-span-6 bg-white"
+                            class="col-span-6 bg-white rounded-3xl"
                             style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px"
                             data-aos="fade-up"
                         >
@@ -71,7 +71,7 @@ import ContactSection from "@/components/pages/home/ContactSection.vue";
 
         <BaseMaxContent class="px-6 py-12 mt-12 flex items-center justify-center">
             <div
-                class="flex flex-col gap-y-7.5 items-center justify-center w-[80%] p-12 min-h-[20vh] bg-white"
+                class="flex flex-col gap-y-7.5 items-center justify-center w-[80%] p-12 min-h-[20vh] bg-white rounded-3xl shadow-xl"
                 data-aos="fade-up"
             >
                 <p class="text-[1.5rem] text-center font-bold">

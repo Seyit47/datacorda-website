@@ -78,6 +78,7 @@ module.exports = {
             "cl-blue": "#5570F1",
 
             "cl-text": "#02274a",
+            "cl-text-hover": "#06335e",
         }),
         columns: {
             auto: "auto",

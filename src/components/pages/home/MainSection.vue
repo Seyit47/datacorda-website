@@ -7,8 +7,14 @@ defineOptions({
 </script>
 
 <template>
-    <div class="relative w-full h-full min-h-[85vh] bg-gradient-to-b from-white to-cl-main/20">
-        <div class="absolute top-0 left-0 w-full h-[85vh] scale-x-[-1] flex items-end text-cl-main">
+    <div
+        class="relative w-full h-full min-h-[calc(100vh-8.125rem)] bg-gradient-to-b from-white to-cl-main/20"
+    >
+        <div
+            id="example-line"
+            ref="exampleLine"
+            class="absolute top-0 left-0 w-full h-full scale-x-[-1] flex items-end text-cl-main"
+        >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 1440 320"
@@ -23,7 +29,7 @@ defineOptions({
             </svg>
         </div>
 
-        <div class="absolute top-0 left-0 w-full h-[85vh] scale-x-[-1] flex items-end text-cl-main">
+        <div class="absolute top-0 left-0 w-full h-full scale-x-[-1] flex items-end text-cl-main">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="relative">
                 <path
                     fill="currentColor"

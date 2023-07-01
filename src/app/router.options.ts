@@ -10,16 +10,16 @@ export default <RouterConfig>{
             };
         }
 
-        const app = useNuxtApp();
-
-        await new Promise<void>((resolve) => {
-            const handler = () => {
-                resolve();
-            };
-            app.hook("page:finish", handler);
-        });
-
         if (to.hash) {
+            const app = useNuxtApp();
+
+            await new Promise<void>((resolve) => {
+                const handler = () => {
+                    resolve();
+                };
+                app.hook("page:finish", handler);
+            });
+
             return {
                 top: 82,
                 el: to.hash,
