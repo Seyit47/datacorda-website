@@ -55,11 +55,11 @@ function focus() {
 function evaluatePaddings() {
     if (prependEl.value) {
         const w = prependEl.value.clientWidth;
-        padLeft.value = w > 0 ? `${(prependEl.value.clientWidth - 7) * 0.0625}rem` : "3.5rem";
+        padLeft.value = w > 0 ? `${prependEl.value.clientWidth}px` : "3.5rem";
     }
     if (appendEl.value) {
         const w = appendEl.value.clientWidth;
-        padRight.value = w > 0 ? `${(appendEl.value.clientWidth - 7) * 0.0625}rem` : "3.5rem";
+        padRight.value = w > 0 ? `${appendEl.value.clientWidth}px` : "3.5rem";
     }
 }
 </script>

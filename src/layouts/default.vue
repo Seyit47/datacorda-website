@@ -46,7 +46,7 @@ function scrollToTop() {
                         rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
                         rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
                 "
-                :style="`background: conic-gradient( rgb(25, 194, 98) ${scrollPercent}%, rgb(255, 255, 255) ${scrollPercent}% )`"
+                :style="`background: conic-gradient( rgb(53, 39, 94) ${scrollPercent}%, rgb(255, 255, 255) ${scrollPercent}% )`"
             >
                 <button
                     class="p-3.75 rounded-full z-1 bg-cl-text hover:bg-cl-text-hover group transition-colors duration-150"

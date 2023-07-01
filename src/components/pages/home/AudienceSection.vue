@@ -19,14 +19,6 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
 
                     <div data-aos="fade-up" class="col-span-5">
                         <div class="flex flex-col gap-y-2.5">
-                            <div>
-                                <span
-                                    class="py-2.5 px-4 rounded-full bg-cl-main/10 text-cl-main text-size_12/16 tracking-widest uppercase"
-                                >
-                                    over 150k+ client
-                                </span>
-                            </div>
-
                             <h2 class="text-[3.5rem] font-semibold">See Deep Analytics</h2>
 
                             <p class="text-size_18/16 leading-[1.8]">
@@ -59,14 +51,6 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                 <div class="grid grid-cols-12 items-center">
                     <div data-aos="fade-up" class="col-span-5">
                         <div class="flex flex-col gap-y-2.5">
-                            <div>
-                                <span
-                                    class="py-2.5 px-4 rounded-full bg-cl-main/10 text-cl-main text-size_12/16 tracking-widest uppercase"
-                                >
-                                    over 150k+ client
-                                </span>
-                            </div>
-
                             <h2 class="text-[3.5rem] font-semibold">Take user-based actions</h2>
 
                             <p class="text-size_18/16 leading-[1.8]">
@@ -118,14 +102,6 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
 
                     <div data-aos="fade-up" class="col-span-5">
                         <div class="flex flex-col gap-y-2.5">
-                            <div>
-                                <span
-                                    class="py-2.5 px-4 rounded-full bg-cl-main/10 text-cl-main text-size_12/16 tracking-widest uppercase"
-                                >
-                                    over 150k+ client
-                                </span>
-                            </div>
-
                             <h2 class="text-[3.5rem] font-semibold">Increase retention rate</h2>
 
                             <p class="text-size_18/16 leading-[1.8]">
@@ -156,14 +132,6 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                 <div class="grid grid-cols-12 items-center">
                     <div data-aos="fade-up" class="col-span-5">
                         <div class="flex flex-col gap-y-2.5">
-                            <div>
-                                <span
-                                    class="py-2.5 px-4 rounded-full bg-cl-main/10 text-cl-main text-size_12/16 tracking-widest uppercase"
-                                >
-                                    over 150k+ client
-                                </span>
-                            </div>
-
                             <h2 class="text-[3.5rem] font-semibold">Increase revenue</h2>
 
                             <p class="text-size_18/16 leading-[1.8]">
