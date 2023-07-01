@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 useHead({
-    title: "Datacorda website",
+    title: "Datacorda",
     htmlAttrs: {
         lang: "en",
     },
