@@ -78,9 +78,9 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                     </div>
 
                     <div data-aos="fade-up" class="col-span-7">
-                        <div class="relative pt-[86.76%]">
+                        <div class="relative pt-[100%]">
                             <NuxtImg
-                                src="/solutions-2.png"
+                                src="/solutions-2-1.png"
                                 alt=""
                                 format="webp"
                                 class="main-banner-right-animation absolute top-0 -right-[20%] w-full h-full"
@@ -159,7 +159,7 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                     <div data-aos="fade-up" class="col-span-7">
                         <div class="relative pt-[90.71%]">
                             <NuxtImg
-                                src="/solutions-4.png"
+                                src="/solutions-4-1.png"
                                 alt=""
                                 format="webp"
                                 class="main-banner-right-animation absolute top-0 -right-[20%] w-full h-full"

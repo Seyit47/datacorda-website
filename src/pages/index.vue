@@ -8,12 +8,48 @@ import ContactSection from "@/components/pages/home/ContactSection.vue";
 <template>
     <div class="relative overflow-hidden w-full pt-12">
         <MainSection />
+
+        <BaseMaxContent class="px-6 py-6 flex items-center justify-center">
+            <div class="flex items-center justify-center w-[80%] p-12 min-h-[20vh]">
+                <h2 class="text-[2.5rem] text-center font-bold" data-aos="fade-up">
+                    With subscribing our platform, businesses from mobile gaming industry can:
+                </h2>
+            </div>
+        </BaseMaxContent>
+
+        <AudienceSection />
+
+        <BaseMaxContent class="px-6 py-12 mt-12 flex items-center justify-center">
+            <div
+                class="flex flex-col gap-y-7.5 items-center justify-center w-[80%] p-12 min-h-[20vh] bg-white rounded-3xl shadow-xl"
+                data-aos="fade-up"
+            >
+                <p class="text-[1.5rem] text-center font-bold">
+                    With Datacorda, you'll have the tools and insights you need to make informed
+                    decisions and unlock the full potential of your mobile game.
+                </p>
+
+                <p class="text-[1.5rem] text-center font-bold">
+                    Join us on this exciting journey and discover a new era of gaming analytics.
+                    Take control of your game's success with Datacorda. Get started today and
+                    revolutionize your mobile gaming business.
+                </p>
+                <div class="w-52">
+                    <button
+                        class="flex items-center justify-center w-full h-full py-4 border-2 border-cl-main text-white hover:text-cl-text bg-cl-main hover:bg-transparent rounded-full font-bold transition-colors duration-150"
+                    >
+                        Book a call
+                    </button>
+                </div>
+            </div>
+        </BaseMaxContent>
+
         <section id="about">
             <BaseMaxContent class="relative px-6 py-6">
                 <div class="absolute top-1/2 -translate-y-1/2 left-[10%] w-full">
-                    <div class="relative pt-[70%]">
+                    <div class="relative pt-[60.52%]">
                         <NuxtImg
-                            src="/about-us.png"
+                            src="/about-us-3.webp"
                             alt="about us"
                             class="absolute top-1/2 -translate-y-1/2 left-0 w-full h-full"
                         />
@@ -59,40 +95,6 @@ import ContactSection from "@/components/pages/home/ContactSection.vue";
                 </div>
             </BaseMaxContent>
         </section>
-        <BaseMaxContent class="px-6 py-6 flex items-center justify-center">
-            <div class="flex items-center justify-center w-[80%] p-12 min-h-[20vh]">
-                <h2 class="text-[2.5rem] text-center font-bold" data-aos="fade-up">
-                    With subscribing our platform, businesses from mobile gaming industry can:
-                </h2>
-            </div>
-        </BaseMaxContent>
-
-        <AudienceSection />
-
-        <BaseMaxContent class="px-6 py-12 mt-12 flex items-center justify-center">
-            <div
-                class="flex flex-col gap-y-7.5 items-center justify-center w-[80%] p-12 min-h-[20vh] bg-white rounded-3xl shadow-xl"
-                data-aos="fade-up"
-            >
-                <p class="text-[1.5rem] text-center font-bold">
-                    With Datacorda, you'll have the tools and insights you need to make informed
-                    decisions and unlock the full potential of your mobile game.
-                </p>
-
-                <p class="text-[1.5rem] text-center font-bold">
-                    Join us on this exciting journey and discover a new era of gaming analytics.
-                    Take control of your game's success with Datacorda. Get started today and
-                    revolutionize your mobile gaming business.
-                </p>
-                <div class="w-52">
-                    <button
-                        class="flex items-center justify-center w-full h-full py-4 border-2 border-cl-main text-white hover:text-cl-text bg-cl-main hover:bg-transparent rounded-full font-bold transition-colors duration-150"
-                    >
-                        Book a call
-                    </button>
-                </div>
-            </div>
-        </BaseMaxContent>
 
         <ContactSection />
     </div>
