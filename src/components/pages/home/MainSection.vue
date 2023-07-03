@@ -9,6 +9,7 @@ defineOptions({
 
 const circle = ref<SVGCircleElement | null>(null);
 const exampleLine = ref<SVGPathElement | null>(null);
+const animations = ref<gsap.core.Tween[]>([]);
 
 onMounted(() => {
     gsap.registerPlugin(MotionPathPlugin);
@@ -19,13 +20,13 @@ onMounted(() => {
         exampleLine.value.style.strokeDasharray = `${dashes}`;
         exampleLine.value.style.strokeDashoffset = `${dashes}`;
 
-        gsap.to(exampleLine.value, {
+        const lineAnimation = gsap.to(exampleLine.value, {
             duration: 5,
             strokeDashoffset: 1940,
             repeat: -1,
         });
 
-        gsap.to(circle.value, {
+        const circleAnimation = gsap.to(circle.value, {
             duration: 5,
             repeat: -1,
             motionPath: {
@@ -36,7 +37,17 @@ onMounted(() => {
                 end: 0.487,
             },
         });
+
+        animations.value.push(lineAnimation);
+        animations.value.push(circleAnimation);
     }
+});
+
+onBeforeUnmount(() => {
+    animations.value.map((tween) => tween.kill());
+    animations.value = [];
+    circle.value = null;
+    exampleLine.value = null;
 });
 </script>
 
@@ -104,6 +115,7 @@ onMounted(() => {
                         fill="none"
                         stroke="white"
                         stroke-width="30"
+                        stroke-opacity="0.8"
                     />
                 </svg>
             </div>
@@ -138,12 +150,6 @@ onMounted(() => {
 </template>
 
 <style lang="scss" scoped>
-@keyframes dash {
-    to {
-        stroke-dashoffset: 1000;
-    }
-}
-
 .main-banner-left-animation {
     animation: main-banner-left 1s ease-in-out infinite alternate;
 }
