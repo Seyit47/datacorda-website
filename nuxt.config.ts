@@ -8,6 +8,18 @@ export default defineNuxtConfig({
         port: Number(process.env.PORT) || 3000,
     },
 
+    vite: {
+        server: {
+            proxy: {
+                "/api": {
+                    target: process.env.BACKEND_SERVER_ORIGIN || "http://localhost:3009",
+                    changeOrigin: true,
+                    rewrite: (path) => path.replace(/^\/api/, ""),
+                },
+            },
+        },
+    },
+
     typescript: {
         shim: false,
         strict: true,
@@ -16,10 +28,20 @@ export default defineNuxtConfig({
 
     css: ["@/assets/scss/style.scss"],
 
-    modules: ["@nuxtjs/tailwindcss", "@vueuse/nuxt", "@nuxt/image", "@nuxtjs/device"],
+    modules: [
+        "@nuxtjs/tailwindcss",
+        "@vueuse/nuxt",
+        "nuxt-headlessui",
+        "@nuxt/image",
+        "@nuxtjs/device",
+    ],
 
     image: {
         dir: "assets/img",
+    },
+
+    headlessui: {
+        prefix: "Headless",
     },
 
     device: {
@@ -40,6 +62,6 @@ export default defineNuxtConfig({
     },
 
     build: {
-        transpile: ["vue-toastification"],
+        transpile: ["vue-toastification", "gsap"],
     },
 });

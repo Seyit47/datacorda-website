@@ -91,33 +91,35 @@ onBeforeUnmount(() => {
                     stroke-width="3.84"
                 />
             </svg>
-            <div class="absolute w-6">
-                <svg
-                    id="eS9u3BoaVbH1"
-                    ref="circle"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 300 300"
-                    shape-rendering="geometricPrecision"
-                    text-rendering="geometricPrecision"
-                >
-                    <ellipse
-                        rx="110"
-                        ry="110"
-                        transform="translate(150.000001 150)"
-                        stroke-width="0"
-                        fill="white"
-                    />
-                    <ellipse
-                        rx="140.561455"
-                        ry="139.935961"
-                        transform="matrix(.960434 0 0 0.964727 150.000001 150)"
-                        fill="none"
-                        stroke="white"
-                        stroke-width="30"
-                        stroke-opacity="0.8"
-                    />
-                </svg>
+            <div class="absolute top-0 left-0 w-full h-full flex items-end">
+                <div class="w-6">
+                    <svg
+                        id="eS9u3BoaVbH1"
+                        ref="circle"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 300 300"
+                        shape-rendering="geometricPrecision"
+                        text-rendering="geometricPrecision"
+                    >
+                        <ellipse
+                            rx="110"
+                            ry="110"
+                            transform="translate(150.000001 150)"
+                            stroke-width="0"
+                            fill="white"
+                        />
+                        <ellipse
+                            rx="140.561455"
+                            ry="139.935961"
+                            transform="matrix(.960434 0 0 0.964727 150.000001 150)"
+                            fill="none"
+                            stroke="white"
+                            stroke-width="30"
+                            stroke-opacity="0.8"
+                        />
+                    </svg>
+                </div>
             </div>
         </div>
 

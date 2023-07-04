@@ -77,6 +77,9 @@ module.exports = {
             "cl-gray": "#8B8D97",
             "cl-blue": "#5570F1",
 
+            "cl-blue-button": "#2F4ED6",
+            "cl-bg": "#D4D1E9",
+
             "cl-text": "#02274a",
             "cl-text-hover": "#06335e",
         }),
@@ -1098,6 +1101,7 @@ module.exports = {
             none: "none",
             "c-popup-tablet": "1px 2px 10px 1px rgba(0, 0, 0, 0.16)",
             "c-header": "0px 2px 3px rgba(0, 0, 0, 0.25);",
+            "c-select": "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
         },
         boxShadowColor: ({ theme }) => theme("colors"),
         caretColor: ({ theme }) => theme("colors"),
