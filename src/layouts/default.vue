@@ -59,19 +59,3 @@ function scrollToTop() {
         <AppFooter />
     </div>
 </template>
-
-<style lang="scss">
-$screen-2xl: 1280px;
-$screen-3xl: 1366px;
-$screen-5xl: 1536px;
-
-html {
-    @media screen and (min-width: $screen-2xl) {
-        font-size: 13px !important;
-    }
-
-    @media screen and (min-width: $screen-5xl) {
-        font-size: 17px !important;
-    }
-}
-</style>

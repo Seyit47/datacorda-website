@@ -32,17 +32,12 @@ export default defineNuxtConfig({
         "@pinia/nuxt",
         "@nuxtjs/tailwindcss",
         "@vueuse/nuxt",
-        "nuxt-headlessui",
         "@nuxt/image",
         "@nuxtjs/device",
     ],
 
     image: {
         dir: "assets/img",
-    },
-
-    headlessui: {
-        prefix: "Headless",
     },
 
     device: {
@@ -63,6 +58,6 @@ export default defineNuxtConfig({
     },
 
     build: {
-        transpile: ["vue-toastification", "gsap"],
+        transpile: ["vue-toastification"],
     },
 });

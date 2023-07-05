@@ -113,7 +113,7 @@ export default defineComponent({
             if (event.target.value.length > 1) {
                 const arrChar = Array.from(this.otp[index]);
                 const char = arrChar.reduce((acc, curValue) => {
-                    if (this.value[index] !== curValue) {
+                    if (this.modelValue[index] !== curValue) {
                         return curValue;
                     }
                     return acc;
@@ -147,6 +147,8 @@ export default defineComponent({
             }
 
             this.parseValue(pastedData);
+            this.setFocus(this.length - 1);
+            this.$emit("update:modelValue", this.otp.join(""));
             this.$refs.otpInput[this.length - 1].blur();
         },
 

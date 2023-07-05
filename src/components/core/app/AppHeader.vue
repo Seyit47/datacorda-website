@@ -65,9 +65,8 @@
                 </nav>
                 <div class="flex items-center">
                     <NuxtLink
-                        :to="{
-                            name: 'account-sign-in',
-                        }"
+                        to="http://localhost:8080/login"
+                        :external="true"
                         class="hover:text-cl-main text-white font-semibold transition-colors duration-150"
                     >
                         Login

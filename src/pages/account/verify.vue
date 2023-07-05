@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useField, useForm } from "vee-validate";
+import { useField, useForm, useIsFormDirty } from "vee-validate";
 import { object, string } from "yup";
 import { useToast, TYPE } from "vue-toastification";
 import { storeToRefs } from "pinia";
@@ -7,8 +7,6 @@ import { useAuthStore } from "@/store/auth";
 import OtpInput from "@/components/core/base/OTPInput.vue";
 
 const toast = useToast();
-
-const router = useRouter();
 
 const isSubmitted = ref(false);
 
@@ -33,13 +31,27 @@ definePageMeta({
     },
 });
 
+function refreshHandler(e: BeforeUnloadEvent) {
+    if (isFormDirty.value) {
+        e.returnValue = "Do you really want to leave? you have unsaved changes!";
+    }
+}
+
+onMounted(() => {
+    window.addEventListener("beforeunload", refreshHandler);
+});
+
+onBeforeUnmount(() => {
+    window.removeEventListener("beforeunload", refreshHandler);
+});
+
 onBeforeRouteLeave((to, _, next) => {
     const leave = () => {
         if (to.name !== "account-verify") {
             setUser(null);
         }
     };
-    if (!isSubmitted.value) {
+    if (isFormDirty.value) {
         const confirmed = window.confirm("Do you really want to leave? you have unsaved changes!");
         if (confirmed) {
             leave();
@@ -57,6 +69,8 @@ const form = useForm({
         otp: string().required("Required field!").length(6, "Invalid OTP input!"),
     }),
 });
+
+const isFormDirty = useIsFormDirty();
 
 const { value: otp } = useField<string>("otp", undefined, {
     initialValue: "",
@@ -92,9 +106,11 @@ async function onSubmit() {
 
         isSubmitted.value = true;
 
-        router.push({
-            name: "account-sign-in",
-        });
+        setTimeout(() => {
+            navigateTo("http://localhost:8080/login", {
+                external: true,
+            });
+        }, 1000);
     } catch (err: any) {
         const res = err.response?._data;
         toast(res?.message, {

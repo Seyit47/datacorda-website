@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useField, useForm } from "vee-validate";
+import { useField, useForm, useIsFormDirty } from "vee-validate";
 import { useToast, TYPE } from "vue-toastification";
 import { object, string } from "yup";
 import { EyeIcon, EyeSlashIcon } from "@heroicons/vue/24/outline";
@@ -22,7 +22,7 @@ onBeforeRouteLeave((to, _, next) => {
             setUser(null);
         }
     };
-    if (!isSubmitted.value) {
+    if (isFormDirty.value) {
         const confirmed = window.confirm("Do you really want to leave? you have unsaved changes!");
         if (confirmed) {
             leave();
@@ -33,6 +33,20 @@ onBeforeRouteLeave((to, _, next) => {
     }
     leave();
     next();
+});
+
+function refreshHandler(e: BeforeUnloadEvent) {
+    if (isFormDirty.value) {
+        e.returnValue = "Do you really want to leave? you have unsaved changes!";
+    }
+}
+
+onMounted(() => {
+    window.addEventListener("beforeunload", refreshHandler);
+});
+
+onBeforeUnmount(() => {
+    window.removeEventListener("beforeunload", refreshHandler);
 });
 
 const showPassword = ref(false);
@@ -57,9 +71,17 @@ const form = useForm({
     }),
 });
 
-const { value: username } = useField<string>("username");
-const { value: email } = useField<string>("email");
-const { value: password } = useField<string>("password");
+const isFormDirty = useIsFormDirty();
+
+const { value: username } = useField<string>("username", undefined, {
+    initialValue: "",
+});
+const { value: email } = useField<string>("email", undefined, {
+    initialValue: "",
+});
+const { value: password } = useField<string>("password", undefined, {
+    initialValue: "",
+});
 
 async function onSubmit() {
     try {
@@ -91,6 +113,7 @@ async function onSubmit() {
 
         setUser(res);
 
+        form.resetForm();
         router.push({
             name: "account-verify",
         });
@@ -184,9 +207,8 @@ async function onSubmit() {
                 <div>
                     <span class="text-size_14/16 text-cl-gray">Already have an account? </span>
                     <NuxtLink
-                        :to="{
-                            name: 'account-sign-in',
-                        }"
+                        to="http://localhost:8080/login"
+                        :external="true"
                         class="text-cl-blue text-size_14/16"
                         >Login</NuxtLink
                     >
