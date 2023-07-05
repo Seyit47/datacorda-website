@@ -25,6 +25,7 @@
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@nuxtjs/eslint-module": "^4.1.0",
     "@nuxtjs/tailwindcss": "^6.6.7",
+    "@pinia/nuxt": "^0.4.11",
     "@types/aos": "^3.0.4",
     "@types/d3": "^7.4.0",
     "@vueuse/core": "^9.11.1",
@@ -37,6 +38,8 @@
     "lint-staged": "^13.0.3",
     "nuxt": "^3.5.3",
     "nuxt-headlessui": "^1.1.4",
+    "pinia": "^2.1.4",
+    "pinia-plugin-persistedstate": "^3.1.0",
     "postcss-custom-properties": "^13.2.0",
     "prettier": "^2.7.1",
     "sass": "^1.63.6",
@@ -51,7 +54,6 @@
   },
   "dependencies": {
     "@heroicons/vue": "^2.0.18",
-    "@pinia/nuxt": "^0.4.11",
     "@vuepic/vue-datepicker": "^5.4.0",
     "aos": "^2.3.4",
     "chart.js": "^4.3.0",
@@ -63,7 +65,6 @@
     "d3-transition": "^3.0.1",
     "d3-tree": "^1.0.25",
     "gsap": "^3.12.2",
-    "pinia-plugin-persistedstate": "^3.1.0",
     "vee-validate": "^4.10.2",
     "vue-toastification": "^2.0.0-rc.5",
     "yup": "^1.2.0"

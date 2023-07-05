@@ -66,7 +66,7 @@
                 <div class="flex items-center">
                     <NuxtLink
                         :to="{
-                            name: 'sign-in',
+                            name: 'account-sign-in',
                         }"
                         class="hover:text-cl-main text-white font-semibold transition-colors duration-150"
                     >
@@ -76,7 +76,7 @@
                     <div class="w-36 ml-12">
                         <NuxtLink
                             :to="{
-                                name: 'sign-up',
+                                name: 'account-sign-up',
                             }"
                             class="flex items-center justify-center w-full h-full py-4 border-2 hover:border-white border-transparent text-cl-main hover:text-white bg-white hover:bg-transparent rounded-full font-bold transition-colors duration-150"
                         >

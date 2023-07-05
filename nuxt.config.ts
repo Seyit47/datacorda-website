@@ -29,6 +29,7 @@ export default defineNuxtConfig({
     css: ["@/assets/scss/style.scss"],
 
     modules: [
+        "@pinia/nuxt",
         "@nuxtjs/tailwindcss",
         "@vueuse/nuxt",
         "nuxt-headlessui",
