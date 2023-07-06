@@ -8,8 +8,6 @@ import OtpInput from "@/components/core/base/OTPInput.vue";
 
 const toast = useToast();
 
-const isSubmitted = ref(false);
-
 const authStore = useAuthStore();
 
 const { getUser } = storeToRefs(authStore);
@@ -104,7 +102,7 @@ async function onSubmit() {
             timeout: 3000,
         });
 
-        isSubmitted.value = true;
+        form.resetForm();
 
         setTimeout(() => {
             navigateTo("http://localhost:8080/login", {
