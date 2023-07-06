@@ -24,13 +24,10 @@ defineOptions({
                     <div class="lg--1:col-span-4 md--2:col-span-5 col-span-12">
                         <div class="flex flex-col gap-y-5 h-full">
                             <p class="md--2:w-full w-[90%] text-size_14/16">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                                tempora molestias natus eius culpa, soluta unde obcaecati saepe
-                                similique! Numquam, iste error cumque id aperiam consectetur animi
-                                magnam debitis veniam.
+                                Brooklyn, New York, USA.
                             </p>
                             <span class="hidden lg--1:block mt-auto font-bold"
-                                >Copyright all rights is reserved Datacorda 2023</span
+                                >Copyright all rights is reserved Datacorda LLC. 2023</span
                             >
                         </div>
                     </div>
@@ -39,12 +36,29 @@ defineOptions({
                             class="flex md--2:flex-row flex-row-reverse flex-wrap lg--1:justify-normal justify-between self-start md--2:gap-x-26.5"
                         >
                             <div class="flex flex-col gap-y-2.5">
-                                <h4 class="font-bold leading-none">Contacts</h4>
-                                <span class="text-size_14/16">+993 65 55 32 12</span>
-                                <span class="text-size_14/16">+993 12 34 56 76</span>
-                                <a href="mailto:info@datacorda.com" class="text-size_14/16"
-                                    >info@datacorda.com</a
+                                <h4 class="font-bold leading-none">Our socials</h4>
+                                <a
+                                    href="https://instagram.com/datacorda_analytics?igshid=MTIzZWMxMTBkOA=="
+                                    target="_blank"
+                                    class="flex items-center gap-x-1 text-size_14/16"
                                 >
+                                    <Icon name="tabler:brand-instagram" size="24" />
+                                    <span>datacorda_analytics</span>
+                                </a>
+                                <a
+                                    href="https://www.linkedin.com/company/datacorda/"
+                                    target="_blank"
+                                    class="flex items-center gap-x-1 text-size_14/16"
+                                >
+                                    <Icon name="tabler:brand-linkedin" size="24" />
+                                    <span>company/datacorda</span>
+                                </a>
+                            </div>
+                            <div class="flex flex-col gap-y-2.5">
+                                <h4 class="font-bold leading-none">Contacts</h4>
+                                <a href="mailto:info@datacorda.com" class="text-size_14/16">
+                                    info@datacorda.com
+                                </a>
                             </div>
                             <div class="flex flex-col gap-y-2.5">
                                 <h4 class="font-bold leading-none">Links</h4>
@@ -85,10 +99,6 @@ defineOptions({
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="lg--1:hidden md--2:mt-auto mt-10 md--2:block flex justify-center">
-                    <span class="font-bold">Copyright all rights is reserved Datacorda 2023</span>
                 </div>
             </div>
         </BaseMaxContent>

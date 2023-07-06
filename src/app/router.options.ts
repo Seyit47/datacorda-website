@@ -4,7 +4,7 @@ export default <RouterConfig>{
     async scrollBehavior(to, from, savedPosition) {
         if (from.name === "index" && to.name === "index" && to.hash) {
             return {
-                top: 82,
+                top: 66,
                 el: to.hash,
                 behavior: "smooth",
             };
@@ -21,7 +21,7 @@ export default <RouterConfig>{
             });
 
             return {
-                top: 82,
+                top: 66,
                 el: to.hash,
                 behavior: "smooth",
             };

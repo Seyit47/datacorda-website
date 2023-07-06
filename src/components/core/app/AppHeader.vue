@@ -33,23 +33,23 @@
                     <NuxtLink
                         :to="{
                             name: 'index',
-                            hash: '#about',
-                        }"
-                        title="About"
-                        class="hover:text-cl-main text-white transition-colors duration-150"
-                    >
-                        About
-                    </NuxtLink>
-
-                    <NuxtLink
-                        :to="{
-                            name: 'index',
                             hash: '#solutions',
                         }"
                         title="Solutions"
                         class="hover:text-cl-main text-white transition-colors duration-150"
                     >
                         Solutions
+                    </NuxtLink>
+
+                    <NuxtLink
+                        :to="{
+                            name: 'index',
+                            hash: '#about',
+                        }"
+                        title="About"
+                        class="hover:text-cl-main text-white transition-colors duration-150"
+                    >
+                        About
                     </NuxtLink>
 
                     <NuxtLink

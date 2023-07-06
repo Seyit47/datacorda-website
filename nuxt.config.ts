@@ -33,11 +33,16 @@ export default defineNuxtConfig({
         "@nuxtjs/tailwindcss",
         "@vueuse/nuxt",
         "@nuxt/image",
+        "nuxt-icon",
         "@nuxtjs/device",
     ],
 
     image: {
         dir: "assets/img",
+    },
+
+    nuxtIcon: {
+        size: "6rem",
     },
 
     device: {

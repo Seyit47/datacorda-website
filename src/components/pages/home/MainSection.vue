@@ -127,7 +127,7 @@ onBeforeUnmount(() => {
             <section id="home" class="relative max-w-[64rem] w-full mx-auto">
                 <div class="h-full flex flex-col gap-y-2.5">
                     <h1 class="text-[4rem] font-semibold">
-                        Revolutionizing Mobile Gaming Analytics!
+                        Empowering Mobile Games with AI-based Prediction
                     </h1>
                     <div class="flex flex-col gap-y-7.5">
                         <p class="w-1/2 text-size_base leading-[1.8]">
