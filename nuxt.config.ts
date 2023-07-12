@@ -22,8 +22,6 @@ export default defineNuxtConfig({
 
     typescript: {
         shim: false,
-        strict: true,
-        typeCheck: true,
     },
 
     css: ["@/assets/scss/style.scss"],
@@ -39,10 +37,6 @@ export default defineNuxtConfig({
 
     image: {
         dir: "assets/img",
-    },
-
-    nuxtIcon: {
-        size: "6rem",
     },
 
     device: {
