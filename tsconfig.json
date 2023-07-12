@@ -5,6 +5,7 @@
     "strict": true,
     "skipLibCheck": true,
     "types": [
+      "nuxt-icon",
       "@vueuse/nuxt",
       "vue-toastification"
     ]

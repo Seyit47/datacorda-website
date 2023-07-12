@@ -71,7 +71,7 @@ const uid = computed(() => {
                     v-bind="$attrs"
                     :disabled="disabled"
                     :placeholder="placeholder"
-                    class="w-full h-15 px-2.5 py-5 border rounded appearance-none text-size_14/16 placeholder:text-size_14/16 transition-colors duration-150 outline-none"
+                    class="w-full h-12.5 px-2.5 py-3.5 border appearance-none text-size_14/16 placeholder:text-size_14/16 transition-colors duration-150 outline-none"
                     :class="{
                         'border-cl-text focus:border-cl-main': !errors && !disabled,
                         'border-red-500 text-red-500 placeholder:text-red-500': errors && !disabled,

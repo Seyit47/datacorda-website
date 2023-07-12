@@ -19,7 +19,7 @@ onBeforeUnmount(() => {
 function handleScroll() {
     scrollPercent.value =
         (window.scrollY * 100) / (document.body.scrollHeight - window.innerHeight);
-    shownToTop.value = window.scrollY > window.innerHeight;
+    shownToTop.value = window.scrollY > 0;
 }
 
 function scrollToTop() {
@@ -29,8 +29,8 @@ function scrollToTop() {
 
 <template>
     <div class="relative min-h-screen w-full">
-        <AppHeader class="sticky top-0 bg-cl-main z-[9999] shadow-md" />
-        <main class="w-full bg-gradient-to-b from-white to-cl-main/10">
+        <AppHeader class="sticky top-0 bg-cl-main z-[9999]" />
+        <main class="w-full bg-cl-gray-bg">
             <slot />
         </main>
         <div

@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-    <header class="w-full h-full bg-cl-main/80">
+    <header class="w-full h-full bg-cl-main">
         <div class="px-12 py-4">
             <div class="w-full h-12.5 flex items-center">
                 <NuxtLink
@@ -25,7 +25,7 @@
                             hash: '#home',
                         }"
                         title="Home"
-                        class="hover:text-cl-main text-white transition-colors duration-150"
+                        class="hover:text-white/80 text-white font-medium transition-colors duration-150"
                     >
                         Home
                     </NuxtLink>
@@ -36,7 +36,7 @@
                             hash: '#solutions',
                         }"
                         title="Solutions"
-                        class="hover:text-cl-main text-white transition-colors duration-150"
+                        class="hover:text-white/80 text-white font-medium transition-colors duration-150"
                     >
                         Solutions
                     </NuxtLink>
@@ -47,7 +47,7 @@
                             hash: '#about',
                         }"
                         title="About"
-                        class="hover:text-cl-main text-white transition-colors duration-150"
+                        class="hover:text-white/80 text-white font-medium transition-colors duration-150"
                     >
                         About
                     </NuxtLink>
@@ -58,7 +58,7 @@
                             hash: '#contact',
                         }"
                         title="Contact"
-                        class="hover:text-cl-main text-white transition-colors duration-150"
+                        class="hover:text-white/80 text-white font-medium transition-colors duration-150"
                     >
                         Contact
                     </NuxtLink>
@@ -67,7 +67,7 @@
                     <NuxtLink
                         to="http://localhost:8080/login"
                         :external="true"
-                        class="hover:text-cl-main text-white font-semibold transition-colors duration-150"
+                        class="hover:text-white/80 text-white font-semibold transition-colors duration-150"
                     >
                         Login
                     </NuxtLink>
@@ -77,7 +77,7 @@
                             :to="{
                                 name: 'account-sign-up',
                             }"
-                            class="flex items-center justify-center w-full h-full py-4 border-2 hover:border-white border-transparent text-cl-main hover:text-white bg-white hover:bg-transparent rounded-full font-bold transition-colors duration-150"
+                            class="flex items-center justify-center w-full h-full py-2.5 border-2 hover:border-white border-transparent text-cl-main hover:text-white bg-white hover:bg-transparent rounded-full font-bold transition-colors duration-150"
                         >
                             Sign up
                         </NuxtLink>

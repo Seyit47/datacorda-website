@@ -70,12 +70,14 @@ module.exports = {
             pink: colors.pink,
             rose: colors.rose,
 
-            "cl-main": "#35275E",
+            "cl-main": "#44376A",
             "cl-secondary": "#575cdd",
             "cl-tertiary": "#436edb",
             "cl-default": "#EFF1F9",
             "cl-gray": "#8B8D97",
             "cl-blue": "#5570F1",
+
+            "cl-gray-bg": "#E8E6ED",
 
             "cl-blue-button": "#2F4ED6",
             "cl-bg": "#D4D1E9",
