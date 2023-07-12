@@ -15,18 +15,22 @@ const { getUser } = storeToRefs(authStore);
 const { setUser } = authStore;
 
 definePageMeta({
-    middleware: () => {
-        const authStore = useAuthStore();
+    middleware: [
+        function () {
+            if (process.server) return;
 
-        const { getUser } = storeToRefs(authStore);
+            const authStore = useAuthStore();
 
-        if (!getUser.value) {
-            return navigateTo({
-                name: "account-sign-up",
-                replace: true,
-            });
-        }
-    },
+            const { getUser } = storeToRefs(authStore);
+
+            if (!getUser.value) {
+                return navigateTo({
+                    name: "account-sign-up",
+                    replace: true,
+                });
+            }
+        },
+    ],
 });
 
 function refreshHandler(e: BeforeUnloadEvent) {
