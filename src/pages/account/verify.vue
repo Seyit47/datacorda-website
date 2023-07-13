@@ -6,6 +6,10 @@ import { storeToRefs } from "pinia";
 import { useAuthStore } from "@/store/auth";
 import OtpInput from "@/components/core/base/OTPInput.vue";
 
+definePageMeta({
+    layout: "login",
+});
+
 const toast = useToast();
 
 const authStore = useAuthStore();
