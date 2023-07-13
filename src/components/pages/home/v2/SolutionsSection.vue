@@ -83,7 +83,7 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                                 data-aos-duration="800"
                             >
                                 <h2 class="w-[70%] text-[3.5rem] text-white font-bold">
-                                    See Deep Analytics
+                                    Perform Deep Analytics
                                 </h2>
 
                                 <p class="text-size_17/16 text-white leading-[1.4]">

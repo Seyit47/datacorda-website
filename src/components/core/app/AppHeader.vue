@@ -64,15 +64,17 @@
                     </NuxtLink>
                 </nav>
                 <div class="flex items-center">
-                    <NuxtLink
-                        to="http://localhost:8080/login"
-                        :external="true"
-                        class="hover:text-white/80 text-white font-semibold transition-colors duration-150"
-                    >
-                        Login
-                    </NuxtLink>
+                    <div class="w-36">
+                        <NuxtLink
+                            to="http://localhost:8080/login"
+                            :external="true"
+                            class="flex items-center justify-center w-full h-full py-2.5 hover:text-white/80 text-white font-semibold transition-colors duration-150"
+                        >
+                            Login
+                        </NuxtLink>
+                    </div>
 
-                    <div class="w-36 ml-12">
+                    <div class="w-36">
                         <NuxtLink
                             :to="{
                                 name: 'account-sign-up',

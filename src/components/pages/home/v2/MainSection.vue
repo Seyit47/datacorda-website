@@ -24,7 +24,7 @@
 
                 <div class="flex flex-col gap-y-7.5">
                     <h1 class="text-[3.5rem] text-white font-medium">
-                        Revolutionizing Mobile Gaming Analytics!
+                        Empowering Mobile Games with AI-based Prediction
                     </h1>
 
                     <div class="flex flex-col gap-y-9.25">

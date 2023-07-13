@@ -10,10 +10,6 @@ import LoginInput from "@/components/pages/login/Input.vue";
 import { useAuthStore } from "@/store/auth";
 import { AuthUser } from "~/types/response/auth";
 
-definePageMeta({
-    layout: "login",
-});
-
 const router = useRouter();
 
 const authStore = useAuthStore();

@@ -17,7 +17,7 @@ import ContactSection from "@/components/pages/home/v2/ContactSection.vue";
                     data-aos="fade-up"
                     data-aos-duration="800"
                 >
-                    With our Subscription, businesses from mobile gaming industry can:
+                    What we offer
                 </h2>
             </div>
         </BaseMaxContent>

@@ -73,11 +73,10 @@ const uid = computed(() => {
                     v-model="localValue"
                     v-bind="$attrs"
                     :placeholder="placeholder"
-                    class="w-full px-2.5 py-3.5 border appearance-none text-size_14/16 placeholder:text-size_14/16 transition-colors duration-150 outline-none resize-none"
+                    class="w-full px-2.5 py-3.5 rounded-md appearance-none text-size_14/16 placeholder:text-size_14/16 transition-colors duration-150 outline-none resize-none"
                     :class="{
-                        'border-cl-text focus:border-cl-main': !errors && !disabled,
-                        'border-red-500 text-red-500 placeholder:text-red-500': errors && !disabled,
-                        'border-gray-400 text-gray-400': disabled,
+                        'text-red-500 placeholder:text-red-500': errors && !disabled,
+                        'text-gray-400': disabled,
                     }"
                     :rows="rows"
                 ></textarea>
