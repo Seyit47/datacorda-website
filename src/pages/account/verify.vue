@@ -6,6 +6,8 @@ import { storeToRefs } from "pinia";
 import { useAuthStore } from "@/store/auth";
 import OtpInput from "@/components/core/base/OTPInput.vue";
 
+const $config = useRuntimeConfig();
+
 const toast = useToast();
 
 const authStore = useAuthStore();
@@ -109,7 +111,7 @@ async function onSubmit() {
         form.resetForm();
 
         setTimeout(() => {
-            navigateTo("http://localhost:8080/login", {
+            navigateTo(`${$config.public.DASHBOARD_URL}/login`, {
                 external: true,
             });
         }, 1000);

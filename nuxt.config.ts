@@ -28,6 +28,12 @@ export default defineNuxtConfig({
         shim: false,
     },
 
+    runtimeConfig: {
+        public: {
+            DASHBOARD_URL: process.env.DASHBOARD_URL,
+        },
+    },
+
     css: ["@/assets/scss/style.scss"],
 
     modules: [

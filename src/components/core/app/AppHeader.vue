@@ -66,7 +66,7 @@
                 <div class="flex items-center">
                     <div class="w-36">
                         <NuxtLink
-                            to="http://localhost:8080/login"
+                            :to="`${$config.public.DASHBOARD_URL}/login`"
                             :external="true"
                             class="flex items-center justify-center w-full h-full py-2.5 hover:text-white/80 text-white font-semibold transition-colors duration-150"
                         >
