@@ -20,10 +20,6 @@ export default defineNuxtConfig({
         },
     },
 
-    experimental: {
-        payloadExtraction: false,
-    },
-
     typescript: {
         shim: false,
     },
