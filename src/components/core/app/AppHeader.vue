@@ -25,7 +25,7 @@
                             hash: '#home',
                         }"
                         title="Home"
-                        class="hover:text-white/80 text-white font-medium transition-colors duration-150"
+                        class="hover:text-white/70 text-white font-medium transition-colors duration-150"
                     >
                         Home
                     </NuxtLink>
@@ -36,7 +36,7 @@
                             hash: '#solutions',
                         }"
                         title="Solutions"
-                        class="hover:text-white/80 text-white font-medium transition-colors duration-150"
+                        class="hover:text-white/70 text-white font-medium transition-colors duration-150"
                     >
                         Solutions
                     </NuxtLink>
@@ -47,7 +47,7 @@
                             hash: '#about',
                         }"
                         title="About"
-                        class="hover:text-white/80 text-white font-medium transition-colors duration-150"
+                        class="hover:text-white/70 text-white font-medium transition-colors duration-150"
                     >
                         About
                     </NuxtLink>
@@ -58,7 +58,7 @@
                             hash: '#contact',
                         }"
                         title="Contact"
-                        class="hover:text-white/80 text-white font-medium transition-colors duration-150"
+                        class="hover:text-white/70 text-white font-medium transition-colors duration-150"
                     >
                         Contact
                     </NuxtLink>
@@ -68,7 +68,7 @@
                         <NuxtLink
                             :to="`${$config.public.DASHBOARD_URL}/login`"
                             :external="true"
-                            class="flex items-center justify-center w-full h-full py-2.5 hover:text-white/80 text-white font-semibold transition-colors duration-150"
+                            class="flex items-center justify-center w-full h-full py-2.5 hover:text-white/70 text-white font-semibold transition-colors duration-150"
                         >
                             Login
                         </NuxtLink>
