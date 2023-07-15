@@ -10,7 +10,7 @@
                     }"
                     class="w-39"
                 >
-                    <div class="relative pt-[16.1%]">
+                    <div class="relative pt-[17.75%]">
                         <img
                             src="@/assets/img/datacorda-logo.png"
                             alt="Datacorda logo"
