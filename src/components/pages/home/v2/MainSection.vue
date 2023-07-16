@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
+</script>
+
 <template>
     <section id="home">
         <div class="relative w-full min-h-[calc(100vh-4.125rem)]">
@@ -9,46 +13,50 @@
                 </div>
             </div>
 
-            <div class="relative max-w-[64.063rem] w-full mx-auto py-12">
-                <div class="absolute -bottom-[35%] -right-[25%] w-[60%]">
-                    <div class="relative pt-[74.7%]">
-                        <NuxtImg
-                            src="/home/main/dashboard.png"
-                            format="webp"
-                            alt="Dashboard"
-                            class="absolute top-0 left-0 w-full h-full"
-                            data-aos="fade-up"
-                        />
+            <BaseMaxContent class="relative py-12">
+                <div class="grid grid-cols-[repeat(13,minmax(0,1fr))] gap-x-10 items-center">
+                    <div class="col-span-6">
+                        <div class="flex flex-col gap-y-7.5">
+                            <h1 class="text-[3.5rem] text-white font-medium">
+                                Empowering Mobile Games with AI-based Prediction
+                            </h1>
+
+                            <div class="flex flex-col gap-y-9.25">
+                                <p class="text-size_18/16 leading-[1.6] text-white">
+                                    Datacorda is an AI-powered prediction and analytics SaaS
+                                    platform for mobile games. We help businesses in the mobile
+                                    gaming industry overcome challenges. With our platform,
+                                    companies can increase their player retention and decrease churn
+                                    rates. Join us to reach the full potential of your mobile gaming
+                                    business.
+                                </p>
+
+                                <div class="w-52">
+                                    <NuxtLink
+                                        :to="{
+                                            name: 'account-sign-up',
+                                        }"
+                                        class="flex items-center justify-center w-full h-full py-2.5 border-2 border-white text-cl-main hover:text-white bg-white hover:bg-transparent rounded-full font-bold transition-colors duration-150"
+                                    >
+                                        Sign up
+                                    </NuxtLink>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="flex flex-col gap-y-7.5">
-                    <h1 class="text-[3.5rem] text-white font-medium">
-                        Empowering Mobile Games with AI-based Prediction
-                    </h1>
-
-                    <div class="flex flex-col gap-y-9.25">
-                        <p class="w-[55%] text-size_18/16 leading-[1.6] text-white">
-                            Datacorda is an AI-powered prediction and analytics SaaS platform for
-                            mobile games. We help businesses in the mobile gaming industry overcome
-                            challenges. With our platform, companies can increase their player
-                            retention and decrease churn rates. Join us to reach the full potential
-                            of your mobile gaming business.
-                        </p>
-
-                        <div class="w-52">
-                            <NuxtLink
-                                :to="{
-                                    name: 'account-sign-up',
-                                }"
-                                class="flex items-center justify-center w-full h-full py-2.5 border-2 border-white text-cl-main hover:text-white bg-white hover:bg-transparent rounded-full font-bold transition-colors duration-150"
-                            >
-                                Sign up
-                            </NuxtLink>
+                    <div class="col-span-7" style="grid-column: span 7 / span 7">
+                        <div class="relative pt-[74.7%] flex items-center justify-center">
+                            <NuxtImg
+                                src="/home/main/dashboard.png"
+                                format="webp"
+                                alt="Dashboard"
+                                class="absolute top-0 left-[5%] w-full h-full"
+                                data-aos="fade-up"
+                            />
                         </div>
                     </div>
                 </div>
-            </div>
+            </BaseMaxContent>
         </div>
     </section>
 </template>
