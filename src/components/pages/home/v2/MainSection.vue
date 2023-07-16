@@ -14,7 +14,9 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
             </div>
 
             <BaseMaxContent class="relative py-12">
-                <div class="grid grid-cols-[repeat(13,minmax(0,1fr))] gap-x-10 items-center">
+                <div
+                    class="grid grid-cols-[repeat(13,minmax(0,1fr))] gap-x-10 items-center min-h-[70vh]"
+                >
                     <div class="col-span-6">
                         <div class="flex flex-col gap-y-7.5">
                             <h1 class="text-[3.5rem] text-white font-medium">
