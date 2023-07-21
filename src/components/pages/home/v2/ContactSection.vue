@@ -58,7 +58,7 @@ defineExpose({
 <template>
     <section id="contact">
         <BaseMaxContent class="px-6 pb-8.25">
-            <div class="grid grid-cols-12 gap-x-28 items-center min-h-[80vh]">
+            <article class="grid grid-cols-12 gap-x-28 items-center min-h-[80vh]">
                 <div class="col-span-7">
                     <div class="relative pt-[64.03%]">
                         <NuxtImg
@@ -122,7 +122,7 @@ defineExpose({
                         </div>
                     </form>
                 </div>
-            </div>
+            </article>
         </BaseMaxContent>
     </section>
 </template>

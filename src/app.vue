@@ -16,7 +16,7 @@ useHead({
     ],
     link: [
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-        { rel: "canonical", href: "https://datacorda.com" },
+        { rel: "canonical", href: "https://www.datacorda.com" },
     ],
 });
 </script>

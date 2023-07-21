@@ -5,7 +5,7 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
 <template>
     <section id="about">
         <BaseMaxContent class="px-6">
-            <div class="grid grid-cols-12 items-center min-h-[80vh]">
+            <article class="grid grid-cols-12 items-center min-h-[80vh]">
                 <div class="col-span-6">
                     <div
                         class="flex flex-col gap-y-7.5"
@@ -44,7 +44,7 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                         />
                     </div>
                 </div>
-            </div>
+            </article>
         </BaseMaxContent>
     </section>
 </template>

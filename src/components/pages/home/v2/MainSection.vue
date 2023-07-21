@@ -4,7 +4,7 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
 
 <template>
     <section id="home">
-        <div class="relative w-full min-h-[calc(100vh-4.125rem)]">
+        <article class="relative w-full min-h-[calc(100vh-4.125rem)]">
             <div class="absolute top-0 left-0 w-full h-full">
                 <div class="w-full h-full">
                     <svg viewBox="0 0 1920 955" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,6 +59,6 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                     </div>
                 </div>
             </BaseMaxContent>
-        </div>
+        </article>
     </section>
 </template>

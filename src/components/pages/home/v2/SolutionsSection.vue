@@ -5,7 +5,7 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
 <template>
     <section id="solutions">
         <BaseMaxContent class="px-6 pt-12 pb-32">
-            <div class="grid grid-cols-12 items-center">
+            <article class="grid grid-cols-12 items-center">
                 <div class="col-span-6">
                     <div
                         class="flex flex-col gap-y-7.5"
@@ -45,7 +45,7 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                         />
                     </div>
                 </div>
-            </div>
+            </article>
         </BaseMaxContent>
 
         <div class="relative w-full h-full">
@@ -63,7 +63,7 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
 
             <BaseMaxContent class="relative px-6 pt-18 pb-34">
                 <div class="flex flex-col mt-11">
-                    <div class="grid grid-cols-12 gap-x-28 items-center min-h-[80vh]">
+                    <article class="grid grid-cols-12 gap-x-28 items-center min-h-[80vh]">
                         <div class="col-span-6">
                             <div class="relative pt-[77.27%]">
                                 <NuxtImg
@@ -105,9 +105,9 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="grid grid-cols-12 gap-x-28 items-center min-h-[80vh]">
+                    <article class="grid grid-cols-12 gap-x-28 items-center min-h-[80vh]">
                         <div class="col-span-6">
                             <div
                                 class="flex flex-col gap-y-7.5"
@@ -147,13 +147,13 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                                 />
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </BaseMaxContent>
         </div>
 
         <BaseMaxContent class="relative px-6">
-            <div class="grid grid-cols-12 gap-x-28 items-center min-h-[80vh]">
+            <article class="grid grid-cols-12 gap-x-28 items-center min-h-[80vh]">
                 <div class="col-span-6">
                     <div class="relative pt-[60.83%]">
                         <NuxtImg
@@ -194,7 +194,7 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
         </BaseMaxContent>
     </section>
 </template>
