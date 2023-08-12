@@ -23,7 +23,7 @@ const form = useForm({
                 /^[_A-Za-z0-9-+]+(\\.[_A-Za-z0-9-]+)*@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/,
                 "Entered invalid email!"
             ),
-        description: string(),
+        description: string().required("Required field!"),
     }),
 });
 
@@ -57,72 +57,123 @@ defineExpose({
 
 <template>
     <section id="contact">
-        <BaseMaxContent class="px-6 pb-8.25">
-            <article class="grid grid-cols-12 gap-x-28 items-center min-h-[80vh]">
-                <div class="col-span-7">
-                    <div class="relative pt-[64.03%]">
-                        <NuxtImg
-                            src="/home/contact/contact.png"
-                            format="webp"
-                            alt="Deep analytics"
-                            class="absolute top-0 -left-[5%] w-full h-full"
-                            data-aos="fade-up"
-                            data-aos-duration="800"
-                        />
-                    </div>
+        <div class="relative w-full h-full">
+            <div class="absolute top-0 left-0 w-full h-full">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1920"
+                    height="2013"
+                    viewBox="0 0 1920 2013"
+                    fill="none"
+                >
+                    <path d="M0 0H1920V2013H0V0Z" fill="url(#paint0_linear_563_25)" />
+                    <defs>
+                        <linearGradient
+                            id="paint0_linear_563_25"
+                            x1="974"
+                            y1="1.22055e-05"
+                            x2="917.292"
+                            y2="2011.4"
+                            gradientUnits="userSpaceOnUse"
+                        >
+                            <stop stop-color="#35275E" />
+                            <stop offset="1" stop-color="white" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+        <BaseMaxContent class="relative px-6 pb-24">
+            <div data-aos="fade-up" data-aos-duration="800" class="flex flex-col w-full px-14">
+                <div class="py-25">
+                    <h2 class="text-[2.3rem] font-bold text-white">
+                        Get Started today With Datacorda to improve your game
+                    </h2>
                 </div>
-                <div class="col-span-5" data-aos="fade-up" data-aos-duration="800">
-                    <div class="flex flex-col gap-y-5">
-                        <h2 class="text-[3rem] text-cl-main font-bold">Contact us</h2>
-                        <p class="text-size_17/16 text-cl-main font-semibold">
-                            Contact us now and see what your game is capable of.
+                <div class="grid grid-cols-2 items-center w-full pb-25">
+                    <div class="flex flex-col gap-y-4">
+                        <h3 class="text-[2.3rem] font-bold text-white">Subscription Plans</h3>
+                        <p class="w-[70%] text-white">
+                            Check-out our flexible prices for all kinds of studios and games
                         </p>
-                    </div>
-                    <form class="flex flex-col gap-y-5 mt-7.5" @submit.prevent="onSubmit">
-                        <div class="flex flex-col gap-y-5 -mx-1">
-                            <div class="w-full">
-                                <BaseInput
-                                    v-model="fullname"
-                                    name="fullname"
-                                    label="Full Name *"
-                                    type="text"
-                                    placeholder="Alex Jones"
-                                    :errors="form.errors.value.fullname"
-                                />
-                            </div>
-
-                            <div class="w-full">
-                                <BaseInput
-                                    v-model="email"
-                                    name="email"
-                                    label="E-mail *"
-                                    type="text"
-                                    placeholder="example: john@gmail.com"
-                                    :errors="form.errors.value.email"
-                                />
-                            </div>
-
-                            <div class="w-full">
-                                <BaseTextArea
-                                    v-model="description"
-                                    name="description"
-                                    label="Note *"
-                                    placeholder="Note..."
-                                    rows="6"
-                                    :errors="form.errors.value.description"
-                                />
-                            </div>
-                        </div>
-                        <div class="w-52 mt-7.5">
-                            <button
-                                class="flex items-center justify-center w-full h-full py-2.5 border-2 border-cl-main text-white hover:text-cl-text bg-cl-main hover:bg-transparent rounded-full font-bold transition-colors duration-150"
+                        <div class="w-46 mt-4">
+                            <NuxtLink
+                                :to="{
+                                    name: 'pricing',
+                                }"
+                                class="flex items-center justify-center w-full h-full py-2.5 border-2 border-white text-cl-main hover:text-white bg-white hover:bg-transparent rounded-full font-bold transition-colors duration-150"
                             >
-                                Send message
-                            </button>
+                                Pricing
+                            </NuxtLink>
                         </div>
-                    </form>
+                    </div>
+                    <div class="flex flex-col gap-y-4">
+                        <h3 class="text-[2.3rem] font-bold text-white">How It Works</h3>
+                        <p class="w-[80%] text-white">
+                            To learn more about how Datacorda works go to product page
+                        </p>
+                        <div class="w-46 mt-4">
+                            <NuxtLink
+                                :to="{
+                                    name: 'product',
+                                }"
+                                class="flex items-center justify-center w-full h-full py-2.5 border-2 border-white text-cl-main hover:text-white bg-white hover:bg-transparent rounded-full font-bold transition-colors duration-150"
+                            >
+                                Product
+                            </NuxtLink>
+                        </div>
+                    </div>
                 </div>
-            </article>
+                <div class="flex flex-col w-full gap-y-5">
+                    <h2 class="text-[3rem] text-cl-main font-bold">Contact us</h2>
+                    <p class="text-size_17/16 text-cl-main font-semibold">
+                        Contact us now and see what your game is capable of.
+                    </p>
+                </div>
+                <form class="w-full flex flex-col gap-y-5 mt-7.5" @submit.prevent="onSubmit">
+                    <div class="flex flex-col gap-y-5 -mx-1">
+                        <div class="w-full">
+                            <BaseInput
+                                v-model="fullname"
+                                name="fullname"
+                                label="Full Name *"
+                                type="text"
+                                placeholder="Alex Jones"
+                                :errors="form.errors.value.fullname"
+                            />
+                        </div>
+
+                        <div class="w-full">
+                            <BaseInput
+                                v-model="email"
+                                name="email"
+                                label="E-mail *"
+                                type="text"
+                                placeholder="example: john@gmail.com"
+                                :errors="form.errors.value.email"
+                            />
+                        </div>
+
+                        <div class="w-full">
+                            <BaseTextArea
+                                v-model="description"
+                                name="description"
+                                label="Note *"
+                                placeholder="Note..."
+                                rows="8"
+                                :errors="form.errors.value.description"
+                            />
+                        </div>
+                    </div>
+                    <div class="w-52 mt-7.5">
+                        <button
+                            class="flex items-center justify-center w-full h-full py-2.5 border-2 border-cl-main text-white hover:text-cl-text bg-cl-main hover:bg-transparent rounded-full font-bold transition-colors duration-150"
+                        >
+                            Send message
+                        </button>
+                    </div>
+                </form>
+            </div>
         </BaseMaxContent>
     </section>
 </template>

@@ -61,6 +61,7 @@ const uid = computed(() => {
                 :for="`textarea-${uid}`"
                 class="inline-block mb-2.5 text-size_base font-bold select-none transition-colors duration-150"
                 :class="{
+                    'text-cl-main': !errors && !disabled,
                     'text-red-500': errors && !disabled,
                     'text-gray-400': disabled,
                 }"

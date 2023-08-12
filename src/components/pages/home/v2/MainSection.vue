@@ -8,53 +8,69 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
             <div class="absolute top-0 left-0 w-full h-full">
                 <div class="w-full h-full">
                     <svg viewBox="0 0 1920 955" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <ellipse cx="601.5" cy="54.5" rx="1428.5" ry="900.5" fill="#44376A" />
+                        <ellipse
+                            cx="601.5"
+                            cy="54.5"
+                            rx="1428.5"
+                            ry="900.5"
+                            fill="url(#paint0_linear_437_162)"
+                        />
+                        <defs>
+                            <linearGradient
+                                id="paint0_linear_437_162"
+                                x1="474"
+                                y1="35.0001"
+                                x2="690"
+                                y2="1312.5"
+                                gradientUnits="userSpaceOnUse"
+                            >
+                                <stop stop-color="#44376A" stop-opacity="0.84" />
+                                <stop offset="0.583333" stop-color="#35275E" />
+                            </linearGradient>
+                        </defs>
                     </svg>
                 </div>
             </div>
 
             <BaseMaxContent class="relative py-12">
-                <div
-                    class="grid grid-cols-[repeat(13,minmax(0,1fr))] gap-x-10 items-center min-h-[70vh]"
-                >
-                    <div class="col-span-6">
+                <div class="flex justify-center items-center min-h-[80vh]">
+                    <div class="w-[70%]">
                         <div class="flex flex-col gap-y-7.5">
-                            <h1 class="text-[3.5rem] text-white font-medium">
-                                Empowering Mobile Games with AI-based Prediction
+                            <h1 class="text-[3.5rem] text-white text-center font-bold">
+                                Empower Your Mobile Games with AI-based Prediction
                             </h1>
 
-                            <div class="flex flex-col gap-y-9.25">
-                                <p class="text-size_18/16 leading-[1.6] text-white">
-                                    Datacorda is an AI-powered prediction and analytics SaaS
-                                    platform for mobile games. We help businesses in the mobile
-                                    gaming industry overcome challenges. With our platform,
-                                    companies can increase their player retention and decrease churn
-                                    rates. Join us to reach the full potential of your mobile gaming
-                                    business.
+                            <div class="flex flex-col items-center gap-y-18">
+                                <p
+                                    class="text-[2rem] text-center leading-[1.6] font-medium text-white"
+                                >
+                                    Increase In-Game Metrics by Analysing and Predicting Player
+                                    behaviours
                                 </p>
 
-                                <div class="w-52">
-                                    <NuxtLink
-                                        :to="{
-                                            name: 'account-sign-up',
-                                        }"
-                                        class="flex items-center justify-center w-full h-full py-2.5 border-2 border-white text-cl-main hover:text-white bg-white hover:bg-transparent rounded-full font-bold transition-colors duration-150"
-                                    >
-                                        Sign up
-                                    </NuxtLink>
+                                <div class="flex items-center gap-x-8">
+                                    <div class="w-52">
+                                        <NuxtLink
+                                            :to="{
+                                                name: 'account-sign-up',
+                                            }"
+                                            class="flex items-center justify-center w-full h-full py-2.5 border-2 border-white text-cl-main hover:text-white bg-white hover:bg-transparent rounded-full font-bold transition-colors duration-150"
+                                        >
+                                            Get started
+                                        </NuxtLink>
+                                    </div>
+                                    <div class="w-52">
+                                        <NuxtLink
+                                            :to="{
+                                                name: 'account-sign-up',
+                                            }"
+                                            class="flex items-center justify-center w-full h-full py-2.5 border-2 border-white text-cl-main hover:text-white bg-white hover:bg-transparent rounded-full font-bold transition-colors duration-150"
+                                        >
+                                            Book Demo
+                                        </NuxtLink>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-span-7" style="grid-column: span 7 / span 7">
-                        <div class="relative pt-[74.7%] flex items-center justify-center">
-                            <NuxtImg
-                                src="/home/main/dashboard.png"
-                                format="webp"
-                                alt="Dashboard"
-                                class="absolute top-0 left-[5%] w-full h-full"
-                                data-aos="fade-up"
-                            />
                         </div>
                     </div>
                 </div>

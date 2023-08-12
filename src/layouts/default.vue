@@ -29,8 +29,13 @@ function scrollToTop() {
 
 <template>
     <div class="relative min-h-screen w-full">
-        <AppHeader class="sticky top-0 bg-cl-main z-[9999]" />
-        <main class="w-full bg-cl-gray-bg">
+        <img
+            src="@/assets/img/white-and-gray-gradient-background.jpg"
+            alt=""
+            class="fixed top-0 left-0 w-full h-full"
+        />
+        <AppHeader class="fixed top-0 bg-cl-main z-[9999]" />
+        <main class="relative w-full">
             <slot />
         </main>
         <div

@@ -2,7 +2,7 @@ import type { RouterConfig } from "@nuxt/schema";
 
 export default <RouterConfig>{
     async scrollBehavior(to, from, savedPosition) {
-        if (from.name === "index" && to.name === "index" && to.hash) {
+        if (from.name === to.name && to.hash) {
             return {
                 top: 66,
                 el: to.hash,
@@ -16,7 +16,11 @@ export default <RouterConfig>{
             const handler = () => {
                 resolve();
             };
-            app.hook("page:finish", handler);
+            if (from.name === undefined && to.hash) {
+                app.hook("page:finish", handler);
+                return;
+            }
+            app.hook("page:transition:finish", handler);
         });
 
         if (to.hash) {

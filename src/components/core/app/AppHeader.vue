@@ -1,7 +1,31 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const bgColor = ref(false);
+
+function bgColorTrigger() {
+    if (window.scrollY > 10) {
+        bgColor.value = true;
+        return;
+    }
+    bgColor.value = false;
+}
+
+onMounted(() => {
+    window.addEventListener("scroll", bgColorTrigger);
+});
+
+onBeforeUnmount(() => {
+    window.removeEventListener("scroll", bgColorTrigger);
+});
+</script>
 
 <template>
-    <header class="w-full h-full bg-cl-main">
+    <header
+        class="w-full transition duration-150"
+        :class="{
+            'bg-transparent': !bgColor,
+            'bg-cl-main shadow-md': bgColor,
+        }"
+    >
         <div class="px-12 py-4">
             <div class="w-full h-12.5 flex items-center">
                 <NuxtLink
@@ -18,7 +42,7 @@
                         />
                     </div>
                 </NuxtLink>
-                <nav class="flex items-center gap-x-10 mx-auto">
+                <nav class="flex items-center gap-x-10 mx-auto pl-36">
                     <NuxtLink
                         :to="{
                             name: 'index',
@@ -43,13 +67,22 @@
 
                     <NuxtLink
                         :to="{
-                            name: 'index',
-                            hash: '#about',
+                            name: 'product',
                         }"
-                        title="About"
+                        title="Product"
                         class="hover:text-white/70 text-white font-medium transition-colors duration-150"
                     >
-                        About
+                        Product
+                    </NuxtLink>
+
+                    <NuxtLink
+                        :to="{
+                            name: 'pricing',
+                        }"
+                        title="Pricing"
+                        class="hover:text-white/70 text-white font-medium transition-colors duration-150"
+                    >
+                        Pricing
                     </NuxtLink>
 
                     <NuxtLink
