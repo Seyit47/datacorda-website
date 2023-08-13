@@ -18,20 +18,20 @@ import AboutEllipse from "@/components/pages/product/AboutEllipse.vue";
 
                 <BaseMaxContent class="relative px-6 pt-16.5">
                     <div class="flex justify-center pt-25">
-                        <div class="w-[70%]">
-                            <h1 class="text-[3rem] text-center font-bold text-white">
+                        <div class="w-[80%]">
+                            <h1 class="text-[3.5rem] text-center font-bold text-white">
                                 Discover the magic of turning data into value
                             </h1>
                         </div>
                     </div>
                 </BaseMaxContent>
 
-                <BaseMaxContent class="relative px-6 pt-12 pb-40">
+                <BaseMaxContent class="relative px-6 pt-12 3xl:pb-40 pb-25">
                     <div class="grid grid-cols-12 items-center">
                         <div class="col-span-7">
-                            <div class="flex flex-col gap-y-10">
-                                <h2 class="text-[2.5rem] font-bold text-white">Data Collection</h2>
-                                <p class="w-[65%] text-white font-medium">
+                            <div class="flex flex-col gap-y-5">
+                                <h2 class="text-[3rem] font-bold text-white">Data Collection</h2>
+                                <p class="w-[70%] text-[1.5rem] text-white font-medium">
                                     With the help of our event design taxonomy, store your data
                                     easily by following the step-by-step guide shown in our
                                     Documentation. After the integration, Datacorda will handle the
@@ -51,10 +51,12 @@ import AboutEllipse from "@/components/pages/product/AboutEllipse.vue";
                     </div>
                 </BaseMaxContent>
 
-                <BaseMaxContent class="relative px-6 flex justify-center min-h-screen">
+                <BaseMaxContent
+                    class="relative px-6 flex justify-center 3xl:min-h-screen min-h-[70vh]"
+                >
                     <div class="grid grid-cols-12 items-center">
                         <div class="col-span-7">
-                            <div class="w-[60%]">
+                            <div class="w-[70%]">
                                 <div class="relative pt-[100%]">
                                     <NuxtImg
                                         src="/product/machine-learning.gif"
@@ -65,11 +67,11 @@ import AboutEllipse from "@/components/pages/product/AboutEllipse.vue";
                             </div>
                         </div>
                         <div class="col-span-5">
-                            <div class="flex flex-col gap-y-10">
+                            <div class="flex flex-col gap-y-7.5">
                                 <h2 class="text-[2.5rem] font-bold text-cl-main">
                                     Machine Learning
                                 </h2>
-                                <p class="text-cl-main font-medium">
+                                <p class="text-[1.5rem] text-cl-main font-medium">
                                     After finishing the data connection process, start getting
                                     relevant Game’s Deep Analytics. Accordingly, our self-learning
                                     AI-models will start learning players’ behaviour. As a result,
@@ -96,12 +98,10 @@ import AboutEllipse from "@/components/pages/product/AboutEllipse.vue";
                             </div>
                             <div class="grid grid-cols-2 gap-x-50 w-full pt-25">
                                 <div class="flex flex-col gap-y-2.5">
-                                    <h2
-                                        class="w-[90%] text-[2.5rem] font-bold text-white border-b-2 pb-1"
-                                    >
+                                    <h2 class="text-[3rem] font-bold text-white border-b-2 pb-1">
                                         Analytics Section
                                     </h2>
-                                    <p class="w-[75%] text-size_18/16 font-medium text-white">
+                                    <p class="text-size_24/16 font-medium text-white">
                                         Our easy to understand and usable dashboards offer deep
                                         analytics and insights into your game's performance. These
                                         comprehensive graphics and funnels provide a clear picture
@@ -111,12 +111,10 @@ import AboutEllipse from "@/components/pages/product/AboutEllipse.vue";
                                     </p>
                                 </div>
                                 <div class="flex flex-col gap-y-2.5">
-                                    <h2
-                                        class="w-[90%] text-[2.5rem] font-bold text-white border-b-2 pb-1"
-                                    >
+                                    <h2 class="text-[3rem] font-bold text-white border-b-2 pb-1">
                                         Model Section
                                     </h2>
-                                    <p class="w-[75%] text-size_18/16 font-medium text-white">
+                                    <p class="text-size_24/16 font-medium text-white">
                                         Our ready to use prediction results offer you player
                                         segments depending on their behaviour. With those segments,
                                         integrate prediction results easily, start optimizing AD
@@ -130,11 +128,13 @@ import AboutEllipse from "@/components/pages/product/AboutEllipse.vue";
                     </BaseMaxContent>
 
                     <section id="about">
-                        <BaseMaxContent class="relative px-6 flex justify-center min-h-screen">
+                        <BaseMaxContent
+                            class="relative px-6 flex justify-center 3xl:min-h-screen min-h-[70vh]"
+                        >
                             <div class="flex flex-col justify-center items-center">
                                 <div class="grid grid-cols-12 items-center">
                                     <div class="col-span-5">
-                                        <div class="relative w-[60%]">
+                                        <div class="relative w-[70%]">
                                             <AboutEllipse />
                                             <div
                                                 class="absolute top-[43%] left-[20%] w-[60%] h-full"
@@ -151,12 +151,10 @@ import AboutEllipse from "@/components/pages/product/AboutEllipse.vue";
                                     </div>
                                     <div class="col-span-7">
                                         <div class="flex flex-col gap-y-10">
-                                            <h2 class="text-[2.5rem] font-bold text-white">
+                                            <h2 class="text-[3rem] font-bold text-white">
                                                 About Us
                                             </h2>
-                                            <p
-                                                class="w-[75%] text-size_18/16 font-medium text-white"
-                                            >
+                                            <p class="text-size_24/16 font-medium text-white">
                                                 Datacorda is an AI-powered prediction and analytics
                                                 SaaS platform for mobile games. At Datacorda, we
                                                 understand the challenges faced by businesses in the

@@ -16,7 +16,7 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                     >
                         <h2 class="text-[3.5rem] text-cl-main font-bold">Deep Analytics</h2>
 
-                        <p class="text-size_17/16 text-cl-main font-semibold leading-[1.4]">
+                        <p class="text-size_20/16 text-cl-main font-semibold leading-[1.4]">
                             Knowing, understanding and being aware of your players is key role in
                             mobile game growth and competition. With Datacorda, make
                             <b>deep analyses</b>
@@ -25,33 +25,35 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                         </p>
                     </div>
                 </div>
-                <div class="relative col-span-7">
-                    <div class="absolute -top-[10%] left-[30%] w-[80%]">
-                        <div class="relative pt-[42.12%]">
-                            <NuxtImg
-                                src="/home/solutions/deep-analytics-bg.png"
-                                format="webp"
-                                alt="Deep analytics funnel"
-                                class="absolute top-0 left-[10%] w-full h-full"
-                                data-aos="fade-up-left"
-                                data-aos-anchor="#deep-analytics"
-                                data-aos-anchor-placement="top center"
-                                data-aos-duration="800"
-                            />
+                <div class="col-span-7">
+                    <div class="relative w-full h-full">
+                        <div class="absolute -top-[10%] left-[30%] w-[80%]">
+                            <div class="relative pt-[42.12%]">
+                                <NuxtImg
+                                    src="/home/solutions/deep-analytics-bg.png"
+                                    format="webp"
+                                    alt="Deep analytics funnel"
+                                    class="absolute top-0 left-[10%] w-full h-full"
+                                    data-aos="fade-up-left"
+                                    data-aos-anchor="#deep-analytics"
+                                    data-aos-anchor-placement="top center"
+                                    data-aos-duration="800"
+                                />
+                            </div>
                         </div>
-                    </div>
-                    <div class="w-[80%]">
-                        <div class="relative pt-[84.12%]">
-                            <NuxtImg
-                                src="/home/solutions/deep-analytics.png"
-                                format="webp"
-                                alt="Deep analytics"
-                                class="absolute top-0 left-[10%] w-full h-full"
-                                data-aos="fade-up-left"
-                                data-aos-anchor="#deep-analytics"
-                                data-aos-anchor-placement="top center"
-                                data-aos-duration="800"
-                            />
+                        <div class="w-[80%]">
+                            <div class="relative pt-[84.12%]">
+                                <NuxtImg
+                                    src="/home/solutions/deep-analytics.png"
+                                    format="webp"
+                                    alt="Deep analytics"
+                                    class="absolute top-0 left-[10%] w-full h-full"
+                                    data-aos="fade-up-left"
+                                    data-aos-anchor="#deep-analytics"
+                                    data-aos-anchor-placement="top center"
+                                    data-aos-duration="800"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -116,7 +118,7 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                                     User-based game optimization
                                 </h2>
 
-                                <p class="w-[94%] text-size_17/16 text-white leading-[1.4]">
+                                <p class="w-[94%] text-size_20/16 text-white leading-[1.4]">
                                     Instead of using traditional A/B testing method or game
                                     optimization techniques, Datacorda uses machine learning
                                     algorithms to predict future player <b>behaviors</b>,
@@ -131,7 +133,7 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
 
                     <article
                         id="increase-retention"
-                        class="grid grid-cols-12 items-center min-h-screen"
+                        class="grid grid-cols-12 items-center 3xl:min-h-screen min-h-[70vh]"
                     >
                         <div class="col-span-5">
                             <div
@@ -145,7 +147,7 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                                     Increase Retention
                                 </h2>
 
-                                <p class="w-[93.7%] text-size_17/16 text-white leading-[1.4]">
+                                <p class="w-[93.7%] text-size_20/16 text-white leading-[1.4]">
                                     Retention is curricular metric in mobile games for the growth
                                     side. Our Real-time AI-prediction model finds players who are
                                     likely to either churn or retain. By finding reasons behind each
@@ -155,13 +157,27 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                             </div>
                         </div>
                         <div class="relative col-span-7">
-                            <div class="absolute -top-[25%] left-[25%] w-full">
-                                <div class="relative pt-[50.31%]">
+                            <div class="relative w-[90%] h-full">
+                                <div class="absolute -top-[25%] left-[25%] w-full">
+                                    <div class="relative pt-[50.31%]">
+                                        <NuxtImg
+                                            src="/home/solutions/increase-retention-bg.png"
+                                            format="webp"
+                                            alt="Increase retention bar chart"
+                                            class="absolute top-0 left-0 w-full h-full"
+                                            data-aos="fade-up-left"
+                                            data-aos-anchor="#increase-retention"
+                                            data-aos-anchor-placement="top center"
+                                            data-aos-duration="800"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="relative pt-[49.14%]">
                                     <NuxtImg
-                                        src="/home/solutions/increase-retention-bg.png"
+                                        src="/home/solutions/increase-retention.png"
                                         format="webp"
-                                        alt="Increase retention bar chart"
-                                        class="absolute top-0 left-0 w-full h-full"
+                                        alt="Deep analytics"
+                                        class="absolute top-[30%] left-[5%] w-full h-full"
                                         data-aos="fade-up-left"
                                         data-aos-anchor="#increase-retention"
                                         data-aos-anchor-placement="top center"
@@ -169,81 +185,74 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                                     />
                                 </div>
                             </div>
-                            <div class="relative pt-[49.14%]">
-                                <NuxtImg
-                                    src="/home/solutions/increase-retention.png"
-                                    format="webp"
-                                    alt="Deep analytics"
-                                    class="absolute top-[30%] left-[5%] w-full h-full"
-                                    data-aos="fade-up-left"
-                                    data-aos-anchor="#increase-retention"
-                                    data-aos-anchor-placement="top center"
-                                    data-aos-duration="800"
-                                />
-                            </div>
                         </div>
                     </article>
                 </div>
             </BaseMaxContent>
         </div>
 
-        <BaseMaxContent class="relative px-6 pb-24">
-            <article id="increase-revenue" class="grid grid-cols-12 items-center min-h-[80vh]">
+        <BaseMaxContent class="relative px-6 3xl:pb-24 pb-0">
+            <article
+                id="increase-revenue"
+                class="grid grid-cols-12 items-center 3xl:min-h-[80vh] min-h-screen"
+            >
                 <div class="relative col-span-7">
-                    <div class="absolute top-[10%] left-[30%] w-[20%]">
-                        <div class="relative pt-[89.89%]">
-                            <NuxtImg
-                                src="/home/solutions/increase-revenue-arppu.png"
-                                format="webp"
-                                alt="Deep analytics"
-                                class="absolute top-0 left-0 w-full h-full"
-                                data-aos="fade-up-right"
-                                data-aos-anchor="#increase-revenue"
-                                data-aos-anchor-placement="top center"
-                                data-aos-duration="800"
-                            />
+                    <div class="relative w-[90%] left-[5%] h-full">
+                        <div class="absolute top-[10%] left-[30%] w-[20%]">
+                            <div class="relative pt-[89.89%]">
+                                <NuxtImg
+                                    src="/home/solutions/increase-revenue-arppu.png"
+                                    format="webp"
+                                    alt="Deep analytics"
+                                    class="absolute top-0 left-0 w-full h-full"
+                                    data-aos="fade-up-right"
+                                    data-aos-anchor="#increase-revenue"
+                                    data-aos-anchor-placement="top center"
+                                    data-aos-duration="800"
+                                />
+                            </div>
                         </div>
-                    </div>
-                    <div class="absolute top-[55%] -left-[7.5%] w-[20%]">
-                        <div class="relative pt-[85.58%]">
-                            <NuxtImg
-                                src="/home/solutions/increase-revenue-daily.png"
-                                format="webp"
-                                alt="Deep analytics"
-                                class="absolute top-0 left-0 w-full h-full"
-                                data-aos="fade-up-right"
-                                data-aos-anchor="#increase-revenue"
-                                data-aos-anchor-placement="top center"
-                                data-aos-duration="800"
-                            />
+                        <div class="absolute top-[55%] -left-[7.5%] w-[20%]">
+                            <div class="relative pt-[85.58%]">
+                                <NuxtImg
+                                    src="/home/solutions/increase-revenue-daily.png"
+                                    format="webp"
+                                    alt="Deep analytics"
+                                    class="absolute top-0 left-0 w-full h-full"
+                                    data-aos="fade-up-right"
+                                    data-aos-anchor="#increase-revenue"
+                                    data-aos-anchor-placement="top center"
+                                    data-aos-duration="800"
+                                />
+                            </div>
                         </div>
-                    </div>
-                    <div class="absolute -top-[38%] -left-[25%] w-[60%]">
-                        <div class="relative pt-[82.1%]">
-                            <NuxtImg
-                                src="/home/solutions/increase-revenue.png"
-                                format="webp"
-                                alt="Deep analytics"
-                                class="absolute top-0 left-0 w-full h-full"
-                                data-aos="fade-up-right"
-                                data-aos-anchor="#increase-revenue"
-                                data-aos-anchor-placement="top center"
-                                data-aos-duration="800"
-                            />
+                        <div class="absolute -top-[38%] -left-[25%] w-[60%]">
+                            <div class="relative pt-[82.1%]">
+                                <NuxtImg
+                                    src="/home/solutions/increase-revenue.png"
+                                    format="webp"
+                                    alt="Deep analytics"
+                                    class="absolute top-0 left-0 w-full h-full"
+                                    data-aos="fade-up-right"
+                                    data-aos-anchor="#increase-revenue"
+                                    data-aos-anchor-placement="top center"
+                                    data-aos-duration="800"
+                                />
+                            </div>
                         </div>
-                    </div>
-                    <div class="w-[80%]">
-                        <div class="relative pt-[61.42%]">
-                            <NuxtImg
-                                src="/home/solutions/increase-revenue-bar.png"
-                                format="webp"
-                                alt="Deep analytics"
-                                class="absolute top-[35%] left-[10%] w-full h-full"
-                                data-aos="fade-up-right"
-                                data-aos-anchor="#increase-revenue"
-                                data-aos-anchor-placement="top center"
-                                data-aos-duration="800"
-                            />
+                        <div class="w-[80%]">
+                            <div class="relative pt-[61.42%]">
+                                <NuxtImg
+                                    src="/home/solutions/increase-revenue-bar.png"
+                                    format="webp"
+                                    alt="Deep analytics"
+                                    class="absolute top-[35%] left-[10%] w-full h-full"
+                                    data-aos="fade-up-right"
+                                    data-aos-anchor="#increase-revenue"
+                                    data-aos-anchor-placement="top center"
+                                    data-aos-duration="800"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -259,7 +268,7 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                             Increase Revenue
                         </h2>
 
-                        <p class="text-size_17/16 text-cl-main font-semibold leading-[1.4]">
+                        <p class="text-size_20/16 text-cl-main font-semibold leading-[1.4]">
                             Understanding that not all players have the same spending habits,
                             Datacorda enables the implementation of segmented monetization
                             strategies. By predicting and finding low-value and high-value players,

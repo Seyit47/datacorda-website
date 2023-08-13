@@ -9,10 +9,10 @@ import ContactSection from "@/components/pages/home/v2/ContactSection.vue";
     <div class="relative overflow-hidden w-full">
         <MainSection />
 
-        <BaseMaxContent class="px-6 pt-16 flex items-center justify-center">
+        <BaseMaxContent class="px-6 3xl:pt-16 pt-0 flex items-center justify-center">
             <div class="flex items-center justify-center w-[70%] p-12 min-h-[20vh]">
                 <h2
-                    class="text-[2.5rem] text-cl-main text-center font-bold"
+                    class="text-[3rem] text-cl-main text-center font-bold"
                     data-aos="fade-up"
                     data-aos-duration="800"
                 >

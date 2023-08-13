@@ -76,9 +76,7 @@ onBeforeUnmount(() => {
                     </NuxtLink>
 
                     <NuxtLink
-                        :to="{
-                            name: 'pricing',
-                        }"
+                        to="#"
                         title="Pricing"
                         class="hover:text-white/70 text-white font-medium transition-colors duration-150"
                     >

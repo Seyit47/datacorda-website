@@ -86,21 +86,19 @@ defineExpose({
         <BaseMaxContent class="relative px-6 pb-24">
             <div data-aos="fade-up" data-aos-duration="800" class="flex flex-col w-full px-14">
                 <div class="py-25">
-                    <h2 class="text-[2.3rem] font-bold text-white">
+                    <h2 class="text-[2.5rem] font-bold text-white">
                         Get Started today With Datacorda to improve your game
                     </h2>
                 </div>
                 <div class="grid grid-cols-2 items-center w-full pb-25">
                     <div class="flex flex-col gap-y-4">
                         <h3 class="text-[2.3rem] font-bold text-white">Subscription Plans</h3>
-                        <p class="w-[70%] text-white">
+                        <p class="w-[70%] text-size_20/16 text-white">
                             Check-out our flexible prices for all kinds of studios and games
                         </p>
                         <div class="w-46 mt-4">
                             <NuxtLink
-                                :to="{
-                                    name: 'pricing',
-                                }"
+                                to="#"
                                 class="flex items-center justify-center w-full h-full py-2.5 border-2 border-white text-cl-main hover:text-white bg-white hover:bg-transparent rounded-full font-bold transition-colors duration-150"
                             >
                                 Pricing
@@ -109,7 +107,7 @@ defineExpose({
                     </div>
                     <div class="flex flex-col gap-y-4">
                         <h3 class="text-[2.3rem] font-bold text-white">How It Works</h3>
-                        <p class="w-[80%] text-white">
+                        <p class="w-[80%] text-size_20/16 text-white">
                             To learn more about how Datacorda works go to product page
                         </p>
                         <div class="w-46 mt-4">
@@ -126,7 +124,7 @@ defineExpose({
                 </div>
                 <div class="flex flex-col w-full gap-y-5">
                     <h2 class="text-[3rem] text-cl-main font-bold">Contact us</h2>
-                    <p class="text-size_17/16 text-cl-main font-semibold">
+                    <p class="text-size_20/16 text-cl-main font-semibold">
                         Contact us now and see what your game is capable of.
                     </p>
                 </div>
