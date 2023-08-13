@@ -23,14 +23,6 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                             and track your game <b>metrics</b> and <b>KPIs</b>, accordingly, to
                             better understand where and why players churn.
                         </p>
-
-                        <div class="w-46 mt-4">
-                            <button
-                                class="flex items-center justify-center w-full h-full py-2.5 border-2 border-cl-main text-white hover:text-cl-main bg-cl-main hover:bg-transparent rounded-full font-bold transition-colors duration-150"
-                            >
-                                More details
-                            </button>
-                        </div>
                     </div>
                 </div>
                 <div class="relative col-span-7">
@@ -133,14 +125,6 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                                     can take player-specific and behavior-specific actions to
                                     different segmented players to increase retention and LTV.
                                 </p>
-
-                                <div class="w-46 mt-4">
-                                    <button
-                                        class="flex items-center justify-center w-full h-full py-2.5 border-2 border-white text-cl-main hover:text-white bg-white hover:bg-transparent rounded-full font-bold transition-colors duration-150"
-                                    >
-                                        More details
-                                    </button>
-                                </div>
                             </div>
                         </div>
                     </article>
@@ -168,14 +152,6 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                                     step of the players, Datacorda offers your game to decrease AD
                                     pressure or to ease your game for churn segmented players.
                                 </p>
-
-                                <div class="w-46 mt-4">
-                                    <button
-                                        class="flex items-center justify-center w-full h-full py-2.5 border-2 border-white text-cl-main hover:text-white bg-white hover:bg-transparent rounded-full font-bold transition-colors duration-150"
-                                    >
-                                        More details
-                                    </button>
-                                </div>
                             </div>
                         </div>
                         <div class="relative col-span-7">
@@ -290,14 +266,6 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                             tailor players’ in-game offerings and promotions to specific player
                             segments to maximize LTV.
                         </p>
-
-                        <div class="w-46 mt-4">
-                            <button
-                                class="flex items-center justify-center w-full h-full py-2.5 border-2 border-cl-main text-white hover:text-cl-main bg-cl-main hover:bg-transparent rounded-full font-bold transition-colors duration-150"
-                            >
-                                More details
-                            </button>
-                        </div>
                     </div>
                 </div>
             </article>

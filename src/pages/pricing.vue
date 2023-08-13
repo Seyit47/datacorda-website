@@ -4,38 +4,26 @@ import PlanItem from "@/components/pages/pricing/PlanItem.vue";
 
 const planList = ref([
     {
+        title: "Starter",
+        feature: ["", "", ""],
+        price: "290",
+        action: "Get Started",
+    },
+    {
         title: "Beginner",
-        feature: ["", "Feature", "Feature"],
+        feature: ["", "", ""],
         price: "590",
         action: "Get Started",
     },
     {
-        title: "Intermediate",
-        feature: [
-            "",
-            "Here will be the text about features",
-            "Here will be the text about features",
-        ],
-        price: "790",
-        action: "Get Started",
-    },
-    {
-        title: "Advanced",
-        feature: [
-            "",
-            "Here will be the text about features",
-            "Here will be the text about features",
-        ],
+        title: "Professional",
+        feature: ["", "", ""],
         price: "1190",
         action: "Get Started",
     },
     {
         title: "Custom Plan",
-        feature: [
-            "2+ games",
-            "Here will be the text about features",
-            "Here will be the text about features",
-        ],
+        feature: ["", "", ""],
         price: "",
         action: "Contact Us",
     },
