@@ -84,7 +84,7 @@ import AboutEllipse from "@/components/pages/product/AboutEllipse.vue";
                     </div>
                 </BaseMaxContent>
 
-                <div class="relative w-full h-full pb-50">
+                <div class="relative w-full h-full 3xl:pb-50 pb-75">
                     <div class="absolute top-0 left-0 w-full h-full">
                         <svg viewBox="0 0 1920 2054" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <ellipse cx="957.5" cy="1027" rx="1450.5" ry="1027" fill="#44376A" />
