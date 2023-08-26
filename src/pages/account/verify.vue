@@ -98,7 +98,7 @@ async function onSubmit() {
         }
         formData.append("verification_code", otp.value);
 
-        await $fetch("/api/user/verify", {
+        await $fetch(`${$config.public.BACKEND_URL}/user/verify`, {
             method: "POST",
             body: formData,
         });
