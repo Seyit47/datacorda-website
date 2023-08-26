@@ -27,6 +27,7 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             DASHBOARD_URL: process.env.DASHBOARD_URL,
+            BACKEND_URL: process.env.BACKEND_URL,
         },
     },
 

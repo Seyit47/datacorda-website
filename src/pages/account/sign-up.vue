@@ -12,6 +12,8 @@ import { AuthUser } from "~/types/response/auth";
 
 const router = useRouter();
 
+const { $config } = useNuxtApp();
+
 const authStore = useAuthStore();
 
 const { setUser } = authStore;
@@ -99,7 +101,7 @@ async function onSubmit() {
         formData.append("email", email.value);
         formData.append("password", password.value);
 
-        const res = await $fetch<AuthUser>("/api/user/register", {
+        const res = await $fetch<AuthUser>(`${$config.public.BACKEND_URL}/user/register`, {
             method: "POST",
             body: formData,
         });
