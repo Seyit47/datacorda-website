@@ -115,7 +115,7 @@ onMounted(() => {
                     </NuxtLink>
                 </nav>
 
-                <PhoneMenu :shown="menuShown" class="lg--1:hidden" @hide="menuShown = false">
+                <PhoneMenu :shown="menuShown" class="md--2:hidden" @hide="menuShown = false">
                     <div
                         class="flex flex-col py-10 px-6 gap-y-5 border-t border-white bg-cl-main shadow-c-header max-h-[80vh] overflow-y-scroll"
                     >
@@ -196,7 +196,7 @@ onMounted(() => {
                     </div>
                 </PhoneMenu>
 
-                <div class="lg--1:hidden ml-auto">
+                <div class="md--2:hidden ml-auto">
                     <button class="w-8.75 flex flex-col gap-y-2" @click="menuShown = !menuShown">
                         <span
                             class="w-full h-0.5 bg-white transition"
