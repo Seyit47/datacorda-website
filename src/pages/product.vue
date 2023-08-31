@@ -2,61 +2,75 @@
 import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
 import SettingsIcon from "@/components/pages/product/SettingsIcon.vue";
 import AboutEllipse from "@/components/pages/product/AboutEllipse.vue";
+
+definePageMeta({
+    layout: "home",
+});
 </script>
 
 <template>
-    <div class="relative w-full overflow-hidden">
+    <div class="relative w-full">
         <section id="product">
-            <article class="relative w-full min-h-screen">
+            <article class="relative w-full pb-25">
                 <div class="relative w-full h-full">
-                    <div class="absolute top-0 left-0 w-full h-full">
-                        <svg viewBox="0 0 1920 1170" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <ellipse cx="1080" cy="456" rx="1410" ry="714" fill="#44376A" />
-                        </svg>
-                    </div>
+                    <div
+                        class="hidden md--2:block absolute top-0 left-0 w-full h-full bg-cl-main"
+                        style="clip-path: ellipse(90% 65% at 60% 35%)"
+                    ></div>
+
+                    <div
+                        class="md--2:hidden absolute top-0 left-0 w-full h-full bg-cl-main"
+                        style="clip-path: ellipse(120% 65% at 65% 35%)"
+                    ></div>
+
+                    <BaseMaxContent class="relative md--2:px-6 px-5 md--2:pt-16.5 pt-7.5">
+                        <div class="flex justify-center pt-25">
+                            <div class="md--2:w-[80%]">
+                                <h1
+                                    class="md--2:text-[3.5rem] text-[2.5rem] text-center font-bold text-white"
+                                >
+                                    Discover the magic of turning data into value
+                                </h1>
+                            </div>
+                        </div>
+                    </BaseMaxContent>
+
+                    <BaseMaxContent class="relative px-6 md--2:pt-12 pt-5 3xl:pb-20 pb-25">
+                        <div class="grid grid-cols-12 items-center">
+                            <div class="md--2:col-span-7 col-span-12">
+                                <div class="flex flex-col gap-y-5">
+                                    <h2
+                                        class="md--2:text-[3rem] text-[2.5rem] md--2:text-left text-center font-bold text-white"
+                                    >
+                                        Data Collection
+                                    </h2>
+                                    <p
+                                        class="md--2:w-[70%] md--2:text-[1.5rem] md--2:text-left text-center text-white font-medium"
+                                    >
+                                        With the help of our event design taxonomy, store your data
+                                        easily by following the step-by-step guide shown in our
+                                        Documentation. After the integration, Datacorda will handle
+                                        the data cleaning, analytics and engineering for you.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="md--2:col-span-5 col-span-12 md--2:row-auto row-[1]">
+                                <div class="relative pt-[100%]">
+                                    <NuxtImg
+                                        src="/product/data-collection.gif"
+                                        format="gif"
+                                        class="absolute top-0 md--2:left-0 -left-[5%] w-full h-full"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </BaseMaxContent>
                 </div>
 
-                <BaseMaxContent class="relative px-6 pt-16.5">
-                    <div class="flex justify-center pt-25">
-                        <div class="w-[80%]">
-                            <h1 class="text-[3.5rem] text-center font-bold text-white">
-                                Discover the magic of turning data into value
-                            </h1>
-                        </div>
-                    </div>
-                </BaseMaxContent>
-
-                <BaseMaxContent class="relative px-6 pt-12 3xl:pb-40 pb-25">
+                <BaseMaxContent class="relative md--2:px-6 px-5 py-12.5 flex justify-center">
                     <div class="grid grid-cols-12 items-center">
-                        <div class="col-span-7">
-                            <div class="flex flex-col gap-y-5">
-                                <h2 class="text-[3rem] font-bold text-white">Data Collection</h2>
-                                <p class="w-[70%] text-[1.5rem] text-white font-medium">
-                                    With the help of our event design taxonomy, store your data
-                                    easily by following the step-by-step guide shown in our
-                                    Documentation. After the integration, Datacorda will handle the
-                                    data cleaning, analytics and engineering for you.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-span-5">
-                            <div class="relative pt-[100%]">
-                                <NuxtImg
-                                    src="/product/data-collection.gif"
-                                    format="gif"
-                                    class="absolute top-0 left-0 w-full h-full"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </BaseMaxContent>
-
-                <BaseMaxContent
-                    class="relative px-6 flex justify-center 3xl:min-h-screen min-h-[70vh]"
-                >
-                    <div class="grid grid-cols-12 items-center">
-                        <div class="col-span-7">
-                            <div class="w-[70%]">
+                        <div class="md--2:col-span-7 col-span-12">
+                            <div class="md--2:w-[70%] w-[80%] md--2:mx-0 mx-auto">
                                 <div class="relative pt-[100%]">
                                     <NuxtImg
                                         src="/product/machine-learning.gif"
@@ -66,12 +80,14 @@ import AboutEllipse from "@/components/pages/product/AboutEllipse.vue";
                                 </div>
                             </div>
                         </div>
-                        <div class="col-span-5">
-                            <div class="flex flex-col gap-y-7.5">
+                        <div class="md--2:col-span-5 col-span-12">
+                            <div class="flex flex-col md--2:gap-y-7.5 gap-y-5">
                                 <h2 class="text-[2.5rem] font-bold text-cl-main">
                                     Machine Learning
                                 </h2>
-                                <p class="text-[1.5rem] text-cl-main font-medium">
+                                <p
+                                    class="md--2:text-[1.5rem] md--2:text-left text-center text-cl-main font-medium"
+                                >
                                     After finishing the data connection process, start getting
                                     relevant Game’s Deep Analytics. Accordingly, our self-learning
                                     AI-models will start learning players’ behaviour. As a result,
@@ -84,24 +100,35 @@ import AboutEllipse from "@/components/pages/product/AboutEllipse.vue";
                     </div>
                 </BaseMaxContent>
 
-                <div class="relative w-full h-full 3xl:pb-50 pb-75">
-                    <div class="absolute top-0 left-0 w-full h-full">
-                        <svg viewBox="0 0 1920 2054" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <ellipse cx="957.5" cy="1027" rx="1450.5" ry="1027" fill="#44376A" />
-                        </svg>
-                    </div>
+                <div class="relative w-full h-full">
+                    <div
+                        class="hidden md--2:block absolute top-0 left-0 w-full h-full bg-cl-main"
+                        style="clip-path: ellipse(80% 50% at 50% 50%)"
+                    ></div>
+                    <div
+                        class="md--2:hidden absolute top-0 left-0 w-full h-full bg-cl-main"
+                        style="clip-path: ellipse(150% 50% at 50% 50%)"
+                    ></div>
 
-                    <BaseMaxContent class="relative px-6 flex justify-center min-h-screen">
+                    <BaseMaxContent
+                        class="relative md--2:px-6 px-5 flex justify-center md--2:py-25 py-20"
+                    >
                         <div class="flex flex-col justify-center items-center">
-                            <div class="w-[20%]">
+                            <div class="md--2:w-[20%] w-[50%]">
                                 <SettingsIcon />
                             </div>
-                            <div class="grid grid-cols-2 gap-x-50 w-full pt-25">
-                                <div class="flex flex-col gap-y-2.5">
-                                    <h2 class="text-[3rem] font-bold text-white border-b-2 pb-1">
+                            <div
+                                class="grid md--2:grid-cols-2 grid-cols-1 gap-x-50 gap-y-12.5 w-full md--2:pt-25 pt-12.5"
+                            >
+                                <div class="flex flex-col md--2:gap-y-2.5 gap-y-4">
+                                    <h2
+                                        class="md--2:text-[3rem] text-[2.5rem] md--2:text-left text-center font-bold text-white border-b-2 md--2:pb-1 pb-2.5"
+                                    >
                                         Analytics Section
                                     </h2>
-                                    <p class="text-size_24/16 font-medium text-white">
+                                    <p
+                                        class="md--2:text-size_24/16 md--2:text-left text-center font-medium text-white"
+                                    >
                                         Our easy to understand and usable dashboards offer deep
                                         analytics and insights into your game's performance. These
                                         comprehensive graphics and funnels provide a clear picture
@@ -110,11 +137,15 @@ import AboutEllipse from "@/components/pages/product/AboutEllipse.vue";
                                         player engagement.
                                     </p>
                                 </div>
-                                <div class="flex flex-col gap-y-2.5">
-                                    <h2 class="text-[3rem] font-bold text-white border-b-2 pb-1">
+                                <div class="flex flex-col md--2:gap-y-2.5 gap-y-4">
+                                    <h2
+                                        class="md--2:text-[3rem] text-[2.5rem] md--2:text-left text-center font-bold text-white border-b-2 md--2:pb-1 pb-2.5"
+                                    >
                                         Model Section
                                     </h2>
-                                    <p class="text-size_24/16 font-medium text-white">
+                                    <p
+                                        class="md--2:text-size_24/16 md--2:text-left text-center font-medium text-white"
+                                    >
                                         Our ready to use prediction results offer you player
                                         segments depending on their behaviour. With those segments,
                                         integrate prediction results easily, start optimizing AD
@@ -129,12 +160,12 @@ import AboutEllipse from "@/components/pages/product/AboutEllipse.vue";
 
                     <section id="about">
                         <BaseMaxContent
-                            class="relative px-6 flex justify-center 3xl:min-h-screen min-h-[70vh]"
+                            class="relative px-6 flex justify-center md--2:pt-25 md--2:pb-40 pb-20"
                         >
                             <div class="flex flex-col justify-center items-center">
-                                <div class="grid grid-cols-12 items-center">
-                                    <div class="col-span-5">
-                                        <div class="relative w-[70%]">
+                                <div class="grid grid-cols-12 items-center gap-y-12.5">
+                                    <div class="md--2:col-span-5 col-span-12">
+                                        <div class="relative w-[70%] md--2:mx-0 mx-auto">
                                             <AboutEllipse />
                                             <div
                                                 class="absolute top-[43%] left-[20%] w-[60%] h-full"
@@ -149,12 +180,16 @@ import AboutEllipse from "@/components/pages/product/AboutEllipse.vue";
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-span-7">
-                                        <div class="flex flex-col gap-y-10">
-                                            <h2 class="text-[3rem] font-bold text-white">
+                                    <div class="md--2:col-span-7 col-span-12">
+                                        <div class="flex flex-col md--2:gap-y-10 gap-y-5">
+                                            <h2
+                                                class="md--2:text-[3rem] text-[2.5rem] md--2:text-left text-center font-bold text-white"
+                                            >
                                                 About Us
                                             </h2>
-                                            <p class="text-size_24/16 font-medium text-white">
+                                            <p
+                                                class="md--2:text-size_24/16 md--2:text-left text-center font-medium text-white"
+                                            >
                                                 Datacorda is an AI-powered prediction and analytics
                                                 SaaS platform for mobile games. At Datacorda, we
                                                 understand the challenges faced by businesses in the

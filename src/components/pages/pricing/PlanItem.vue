@@ -23,7 +23,7 @@ defineProps({
 
 <template>
     <div
-        class="flex flex-col items-center gap-y-10 px-10 py-8 h-full rounded-xl shadow-lg bg-white"
+        class="flex flex-col items-center gap-y-10 md--2:px-10 px-5 py-8 h-full rounded-xl shadow-lg bg-white"
     >
         <div class="flex flex-col items-center gap-y-5 w-full">
             <h4 class="text-[1.4rem] leading-none font-semibold text-cl-main">{{ title }}</h4>
@@ -38,11 +38,11 @@ defineProps({
         </div>
         <div class="flex flex-col w-full gap-y-5">
             <div v-for="(item, index) in feature" :key="index" class="flex items-start gap-x-2.5">
-                <div class="w-4.25">
+                <div class="w-3.75">
                     <IconCheck />
                 </div>
-                <div class="w-[80%]">
-                    <p class="text-cl-main leading-[1.2] text-size_15/16 font-semibold">
+                <div class="w-full -mt-0.5">
+                    <p class="text-black leading-[1.4] text-size_13/16">
                         {{ item }}
                     </p>
                 </div>

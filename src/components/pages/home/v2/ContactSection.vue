@@ -56,58 +56,56 @@ defineExpose({
 </script>
 
 <template>
-    <section id="contact">
-        <div class="relative w-full h-full">
-            <div class="absolute top-0 left-0 w-full h-full">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="1920"
-                    height="2013"
-                    viewBox="0 0 1920 2013"
-                    fill="none"
-                >
-                    <path d="M0 0H1920V2013H0V0Z" fill="url(#paint0_linear_563_25)" />
-                    <defs>
-                        <linearGradient
-                            id="paint0_linear_563_25"
-                            x1="974"
-                            y1="1.22055e-05"
-                            x2="917.292"
-                            y2="2011.4"
-                            gradientUnits="userSpaceOnUse"
-                        >
-                            <stop stop-color="#35275E" />
-                            <stop offset="1" stop-color="white" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </div>
-        </div>
-        <BaseMaxContent class="relative px-6 pb-24">
-            <div data-aos="fade-up" data-aos-duration="800" class="flex flex-col w-full px-14">
+    <section id="contact" class="relative">
+        <div
+            class="absolute top-0 left-0 w-full h-full"
+            style="background: linear-gradient(180deg, #35275e 0%, rgba(217, 217, 217, 0) 100%)"
+        ></div>
+        <BaseMaxContent class="relative md--2:px-6 px-5 pb-24">
+            <div
+                data-aos="fade-up"
+                data-aos-duration="800"
+                class="flex flex-col w-full md--2:px-14"
+            >
                 <div class="py-25">
-                    <h2 class="text-[2.5rem] font-bold text-white">
+                    <h2
+                        class="md--2:text-[2.5rem] text-[1.3rem] md--2:text-left text-center font-bold text-white"
+                    >
                         Get Started today With Datacorda to improve your game
                     </h2>
                 </div>
-                <div class="grid grid-cols-2 items-center w-full pb-25">
-                    <div class="flex flex-col gap-y-4">
-                        <h3 class="text-[2.3rem] font-bold text-white">Subscription Plans</h3>
-                        <p class="w-[70%] text-size_20/16 text-white">
+                <div
+                    class="grid md--2:grid-cols-2 grid-cols-1 gap-y-12.5 items-center w-full pb-25"
+                >
+                    <div class="flex flex-col md--2:items-baseline items-center gap-y-4">
+                        <h3 class="md--2:text-[2.3rem] text-[1.8rem] font-bold text-white">
+                            Subscription Plans
+                        </h3>
+                        <p
+                            class="md--2:w-[70%] w-[90%] md--2:text-left text-center md--2:text-size_20/16 text-base text-white"
+                        >
                             Check-out our flexible prices for all kinds of studios and games
                         </p>
                         <div class="w-46 mt-4">
                             <NuxtLink
-                                to="#"
+                                :to="{
+                                    name: 'pricing',
+                                }"
                                 class="flex items-center justify-center w-full h-full py-2.5 border-2 border-white text-cl-main hover:text-white bg-white hover:bg-transparent rounded-full font-bold transition-colors duration-150"
                             >
                                 Pricing
                             </NuxtLink>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-y-4">
-                        <h3 class="text-[2.3rem] font-bold text-white">How It Works</h3>
-                        <p class="w-[80%] text-size_20/16 text-white">
+                    <div class="flex flex-col md--2:items-baseline items-center gap-y-4">
+                        <h3
+                            class="md--2:text-[2.3rem] text-[1.8rem] md--2:text-left text-center font-bold text-white"
+                        >
+                            How It Works
+                        </h3>
+                        <p
+                            class="md--2:w-[80%] w-[90%] md--2:text-left text-center md--2:text-size_20/16 text-base text-white"
+                        >
                             To learn more about how Datacorda works go to product page
                         </p>
                         <div class="w-46 mt-4">
@@ -123,7 +121,9 @@ defineExpose({
                     </div>
                 </div>
                 <div class="flex flex-col w-full gap-y-5">
-                    <h2 class="text-[3rem] text-cl-main font-bold">Contact us</h2>
+                    <h2 class="md--2:text-[3rem] text-[2.5rem] text-cl-main font-bold">
+                        Contact us
+                    </h2>
                     <p class="text-size_20/16 text-cl-main font-semibold">
                         Contact us now and see what your game is capable of.
                     </p>

@@ -131,7 +131,9 @@ async function onSubmit() {
 
 <template>
     <article class="w-full min-h-[calc(100vh-4rem)] flex justify-center items-center">
-        <div class="flex flex-col items-center gap-y-12.5 w-120 py-10 px-8.5 bg-white rounded-xl">
+        <div
+            class="flex flex-col items-center gap-y-12.5 lg--1:w-120 w-140 py-10 px-8.5 bg-white rounded-xl"
+        >
             <div class="flex flex-col items-center gap-y-2.5">
                 <div class="w-36.25">
                     <NuxtImg src="/sign-in-logo.png" alt="Datacorda logo" />
