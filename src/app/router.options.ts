@@ -2,9 +2,11 @@ import type { RouterConfig } from "@nuxt/schema";
 
 export default <RouterConfig>{
     async scrollBehavior(to, from, savedPosition) {
+        const { isMobile } = useDevice();
+
         if (from.name === to.name && to.hash) {
             return {
-                top: 66,
+                top: isMobile ? 82 : 66,
                 el: to.hash,
                 behavior: "smooth",
             };
@@ -25,7 +27,7 @@ export default <RouterConfig>{
 
         if (to.hash) {
             return {
-                top: 66,
+                top: isMobile ? 82 : 66,
                 el: to.hash,
                 behavior: "smooth",
             };

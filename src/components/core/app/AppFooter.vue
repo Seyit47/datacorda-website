@@ -7,9 +7,9 @@ defineOptions({
 </script>
 
 <template>
-    <footer class="absolute top-full left-0 w-full bg-cl-main">
+    <footer class="w-full bg-cl-main">
         <BaseMaxContent class="md--2:px-6 px-5 text-white">
-            <div class="lg--1:pt-10 lg--1:pb-12.5 md--2:py-7.5 pt-10 pb-2.5">
+            <div class="lg--1:pt-10 lg--1:pb-12.5 md--2:py-7.5 py-7.5">
                 <div class="w-39">
                     <NuxtLink
                         :to="{
@@ -20,7 +20,7 @@ defineOptions({
                     </NuxtLink>
                 </div>
 
-                <div class="grid grid-cols-12 gap-y-10 mt-5">
+                <div class="grid grid-cols-12 gap-y-10 mt-10">
                     <div class="lg--1:col-span-4 md--2:col-span-5 col-span-12">
                         <div class="flex flex-col gap-y-7.5 h-full">
                             <div class="flex flex-col gap-y-2.5">
@@ -48,7 +48,7 @@ defineOptions({
                                 <p class="md--2:w-full w-[90%] text-size_14/16">
                                     Brooklyn, New York, USA.
                                 </p>
-                                <span class="hidden lg--1:block mt-auto font-bold"
+                                <span class="hidden md--2:block mt-auto font-bold"
                                     >Copyright all rights is reserved Datacorda LLC. 2023</span
                                 >
                             </div>
@@ -57,7 +57,7 @@ defineOptions({
                     <div class="lg--1:col-span-8 md--2:col-span-7 col-span-12 md--2:ml-auto">
                         <div class="flex flex-col gap-y-7.5">
                             <div
-                                class="flex md--2:flex-row flex-row-reverse flex-wrap lg--1:justify-normal justify-between self-start md--2:gap-x-26.5"
+                                class="flex flex-wrap lg--1:justify-normal justify-between self-start md--2:gap-x-26.5 gap-y-5"
                             >
                                 <div class="flex flex-col gap-y-2.5">
                                     <h4 class="font-bold leading-none">Our socials</h4>
@@ -120,16 +120,14 @@ defineOptions({
                                         >
                                         <NuxtLink
                                             :to="{
-                                                name: 'index',
-                                                hash: '#about',
+                                                name: 'privacy',
                                             }"
                                             class="text-size_14/16"
                                             >Privacy Policy</NuxtLink
                                         >
                                         <NuxtLink
                                             :to="{
-                                                name: 'index',
-                                                hash: '#about',
+                                                name: 'terms-and-conditions',
                                             }"
                                             class="text-size_14/16"
                                             >Terms & conditions</NuxtLink
@@ -139,6 +137,10 @@ defineOptions({
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="md--2:hidden pt-10 text-center font-bold">
+                    Copyright all rights is reserved Datacorda LLC. 2023
                 </div>
             </div>
         </BaseMaxContent>

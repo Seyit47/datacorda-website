@@ -17,6 +17,14 @@ html {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 
+    @media screen and (min-width: $screen-md--2) {
+        font-size: 9px !important;
+    }
+
+    @media screen and (min-width: $screen-lg--1) {
+        font-size: 11px !important;
+    }
+
     @media screen and (min-width: $screen-2xl) {
         font-size: 13px !important;
     }

@@ -28,13 +28,13 @@ function scrollToTop() {
 </script>
 
 <template>
-    <div class="relative w-full">
-        <!-- <img
+    <div class="relative min-h-screen w-full">
+        <img
             src="@/assets/img/white-and-gray-gradient-background.jpg"
             alt=""
             class="fixed top-0 left-0 w-full h-full"
-        /> -->
-        <AppHeader :is-home-page="false" />
+        />
+        <AppHeader :is-home-page="true" />
         <main class="relative w-full">
             <slot />
         </main>
