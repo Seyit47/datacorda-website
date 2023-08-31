@@ -47,6 +47,10 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                             alt="Deep analytics mobile"
                             format="webp"
                             class="absolute top-0 left-0 w-full h-full"
+                            data-aos="fade-up-left"
+                            data-aos-anchor="#deep-analytics"
+                            data-aos-anchor-placement="top center"
+                            data-aos-duration="800"
                         />
                     </div>
                     <div class="hidden md--2:block relative w-full h-full">
@@ -117,12 +121,24 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                         class="grid grid-cols-12 gap-y-7.5 items-center md--2:pt-40 pt-20 md--2:pb-35 pb-12.5"
                     >
                         <div class="md--2:col-span-7 col-span-12">
-                            <div class="relative pt-[62.38%]">
+                            <div class="hidden md--2:block relative pt-[62.38%]">
                                 <NuxtImg
                                     src="/home/solutions/user-based-optimization.png"
                                     format="webp"
                                     alt="User based game optimization"
                                     class="absolute top-0 lg--1:-left-[10%] md--2:left-[-5%] left-0 w-full h-full"
+                                    data-aos="fade-up-right"
+                                    data-aos-anchor="#user-based-optimization"
+                                    data-aos-anchor-placement="top center"
+                                    data-aos-duration="800"
+                                />
+                            </div>
+                            <div class="md--2:hidden relative pt-[59.24%]">
+                                <NuxtImg
+                                    src="/home/solutions/user-based-optimization-mobile.png"
+                                    format="webp"
+                                    alt="User based game optimization"
+                                    class="absolute top-0 left-0 w-full h-full"
                                     data-aos="fade-up-right"
                                     data-aos-anchor="#user-based-optimization"
                                     data-aos-anchor-placement="top center"
@@ -185,7 +201,7 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                             </div>
                         </div>
                         <div class="relative md--2:col-span-7 col-span-12 md--2:row-auto row-[1]">
-                            <div class="relative lg--1:w-[90%] w-[85%] h-full">
+                            <div class="hidden md--2:block relative lg--1:w-[90%] w-[85%] h-full">
                                 <div class="absolute -top-[25%] md--2:left-[25%] left-[15%] w-full">
                                     <div class="relative pt-[50.31%]">
                                         <NuxtImg
@@ -212,6 +228,18 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                                         data-aos-duration="800"
                                     />
                                 </div>
+                            </div>
+                            <div class="md--2:hidden relative pt-[63.85%]">
+                                <NuxtImg
+                                    src="/home/solutions/increase-retention-mobile.png"
+                                    format="webp"
+                                    alt="Increase retention bar chart"
+                                    class="absolute top-0 left-0 w-full h-full"
+                                    data-aos="fade-up-left"
+                                    data-aos-anchor="#increase-retention"
+                                    data-aos-anchor-placement="top center"
+                                    data-aos-duration="800"
+                                />
                             </div>
                         </div>
                     </article>
