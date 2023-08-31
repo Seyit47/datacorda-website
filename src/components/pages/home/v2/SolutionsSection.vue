@@ -254,6 +254,10 @@ import BaseMaxContent from "@/components/core/base/BaseMaxContent.vue";
                         <NuxtImg
                             src="/home/solutions/increase-revenue-mobile.png"
                             class="absolute top-0 left-0 w-full h-full"
+                            data-aos="fade-up-right"
+                            data-aos-anchor="#increase-revenue"
+                            data-aos-anchor-placement="top center"
+                            data-aos-duration="800"
                         />
                     </div>
                     <div
