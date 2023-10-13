@@ -184,9 +184,8 @@ onMounted(() => {
 
                             <div class="w-full">
                                 <NuxtLink
-                                    :to="{
-                                        name: 'account-sign-up',
-                                    }"
+                                    :to="`${$config.public.DASHBOARD_URL}/signup`"
+
                                     class="flex items-center justify-center w-full h-full py-2.5 border-2 hover:border-white border-transparent text-cl-main hover:text-white bg-white hover:bg-transparent rounded-full font-bold transition-colors duration-150"
                                 >
                                     Sign up
@@ -232,9 +231,7 @@ onMounted(() => {
 
                     <div class="w-36">
                         <NuxtLink
-                            :to="{
-                                name: 'account-sign-up',
-                            }"
+                            :to="`${$config.public.DASHBOARD_URL}/signup`"
                             class="flex items-center justify-center w-full h-full py-2.5 border-2 hover:border-white border-transparent text-cl-main hover:text-white bg-white hover:bg-transparent rounded-full font-bold transition-colors duration-150"
                         >
                             Sign up
@@ -245,3 +242,4 @@ onMounted(() => {
         </div>
     </header>
 </template>
+
